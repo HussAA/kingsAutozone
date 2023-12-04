@@ -1,12 +1,21 @@
-import AppNavBar  from "../components/Navbar";
+import AppNavBar from "../components/Navbar";
 import * as React from "react";
+import styled from "@emotion/styled";
+import AboutUs from "../components/About";
 
 const IndexPage = () => {
   return (
     <>
-      <section>
-        <AppNavBar />
-      </section>
+      <header>
+        <section style={{minHeight:"100px", marginTop:"50px"}}>
+          <AppNavBar />
+        </section>
+      </header>
+      <body>
+        <section>
+          <AboutUs />
+        </section>
+      </body>
     </>
   );
 };

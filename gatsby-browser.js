@@ -1,15 +1,5 @@
-import { createTheme } from '@mui/system';
+import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap-icons/font/bootstrap-icons.css";
 
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 750,
-      lg: 1200,
-      xl: 1536,
-    },
-  },
-});
 
-export { theme };
+import "./src/styles/index.css"

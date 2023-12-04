@@ -38,20 +38,20 @@ const ListItemButtonStyle = styled(ListItemButton)`
 `;
 
 const AppBarStyle = styled(AppBar)`
-  height: 75px;
-  background: #6F37A9;
+  height: 100px;
+  background: transparent;
 `;
 const LinksStyle = styled(Link)`
-  color: white;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 16px;
   transition: 0.2s;
   &:hover {
-    color: black;
+    color: grey;
   }
 `;
-const ButtonStyle = styled(Button)`
+const BookButtonStyle = styled(Button)`
   color: white;
   margin-left: 16px;
   background: #1e3f68;
@@ -75,7 +75,7 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      AutoCare
+      Spring Auto Care
       </Typography>
       <Divider />
       <List>
@@ -114,9 +114,9 @@ const AppNavBar = (props) => {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBarStyle>
-        <Toolbar>
+        <Toolbar sx={{marginTop:"auto",marginBottom:"auto"}}>
         <IconButton
-            color="inherit"
+            color="dark"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -125,8 +125,8 @@ const AppNavBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography  variant="h6" component="div">
-            <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-              AutoCare
+            <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+              Spring Auto Care
             </Link>
           </Typography>
 
@@ -136,10 +136,10 @@ const AppNavBar = (props) => {
             <LinksStyle to="/page2">Packages</LinksStyle>
             <LinksStyle to="/page2">Contact us</LinksStyle>
             <LinksStyle to="/page2">Gallery</LinksStyle>
-            <ButtonStyle variant="contained">Book Now</ButtonStyle>
+            <BookButtonStyle variant="contained">Book Now</BookButtonStyle>
           </Box>
           <Box sx={{ mr: 2, display: { md: 'none' } }} style={{ marginLeft: "auto" }}>
-          <ButtonStyle variant="contained">Book Now</ButtonStyle>
+          <BookButtonStyle variant="contained">Book Now</BookButtonStyle>
           </Box >
         </Toolbar>
       </AppBarStyle>
