@@ -1,0 +1,31 @@
+.bronze-pic {
+    background: url("../images/Bronze-pic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
+    height: 100%;
+    max-height: 400px;
+    
+    
+}
+
+.silver-pic{
+    background: url("../images/Silver-pic.png");
+    min-height: 160px;
+    height: 100%;
+    max-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.gold-pic{
+    background: url("../images/Gold-pic.png");
+    min-height: 160px;
+    height: 100%;
+    max-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

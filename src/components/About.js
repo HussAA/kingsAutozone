@@ -1,16 +1,16 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
+// import { Container, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 
-const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 400px; /* Adjust the height as needed */
+// const SectionContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 400px; /* Adjust the height as needed */
 
-  @media (min-width: 600px) {
-    flex-direction: row;
-  }
-`;
+//   @media (min-width: 600px) {
+//     flex-direction: row;
+//   }
+// `;
 
 const LeftHalf = styled.div`
 min-height: 410px;
@@ -27,12 +27,17 @@ const RightHalf = styled.div`
   
 `;
 
-const Title = styled(Typography)`
+const Title = styled.div`
   min-height: 260px;
   align-items: center;
   font-family: sans-serif;
 `;
-
+const SecondTitle = styled.span`
+font-size: 32px !important;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+`
 const LeftText = styled.div`
   background: #202020;
   min-height: 150px;
@@ -43,15 +48,6 @@ const LeftText = styled.div`
 
 const AboutUs = () => {
   return (
-    // <Container>
-    //   <SectionContainer>
-    //     <LeftHalf>
-    //       <Title variant="h4">Title at Top Left</Title>
-    //       <Text variant="body1">Text at Bottom Left</Text>
-    //     </LeftHalf>
-    //     <RightHalf className="carpic"/>
-    //   </SectionContainer>
-    // </Container>
 
     <div className="container-sm">
       <div className="row">
@@ -59,8 +55,10 @@ const AboutUs = () => {
         <LeftHalf className="col-md-5">
 
           <Title className="row">
-            <div className="col h4 fs-2">About Us</div>
+            <div className="col fs-6">ABOUT US <br/> <SecondTitle>Auto detailing</SecondTitle></div>
+            
           </Title>
+          
 
           <LeftText className="row">
             <div className="col">

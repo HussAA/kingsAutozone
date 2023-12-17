@@ -17,17 +17,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme } from '@mui/material/styles';
 
-// const theme = createTheme({
-//   breakpoints: {
-//     values: {
-//       xs: 0,
-//       sm: 600,
-//       md: 700, // set md to 700px
-//       lg: 960,
-//       xl: 1200,
-//     },
-//   },
-// });
+
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
@@ -39,7 +29,8 @@ const ListItemButtonStyle = styled(ListItemButton)`
 
 const AppBarStyle = styled(AppBar)`
   height: 100px;
-  background: transparent;
+  background: white;
+  position: fixed;
 `;
 const LinksStyle = styled(Link)`
   color: black;
@@ -75,7 +66,7 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      Spring Auto Care
+      Springs Auto Care
       </Typography>
       <Divider />
       <List>
@@ -126,7 +117,7 @@ const AppNavBar = (props) => {
           </IconButton>
           <Typography  variant="h6" component="div">
             <Link to="/" style={{ color: "black", textDecoration: "none" }}>
-              Spring Auto Care
+              Springs Auto Care
             </Link>
           </Typography>
 
