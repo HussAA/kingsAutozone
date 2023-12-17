@@ -50,36 +50,36 @@ const Packages = () => {
                     <div className='col bronze-pic'/>
                 </div>
                 <div className='row'>
-                    <Price className='col mb-3'>
+                    <Price className='col my-3'>
                         Starting at $100
                     </Price>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Full vaccum of seats, floor and trunk
+                        Full vaccum including trunk
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Exterior hand wash and towel dry
+                        Exterior hand wash
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Windows clean
+                        Rim & wheel cleaning
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Tire shine + Rims clean
+                        Tire cleaning + tire shine
                     </ListStyle>
                 </div>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col text-center'>
                         Estimated time - 1.5 hours
                     </div>
                 </div>
@@ -95,48 +95,43 @@ const Packages = () => {
                     <div className='col silver-pic'/>
                 </div>
                 <div className='row'>
-                    <Price className='col mb-3'>
+                    <Price className='col my-3'>
                         Starting at $160
                     </Price>
                 </div>
                 <div className='row'>
+                    <ListStyle className='col fw-bold'>
+                        <ArrowStyle className='bi bi-arrow-90deg-down'/>
+                        Bronze package, plus
+                    </ListStyle>
+                </div>
+
+                <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Full vaccum of seats, floor and trunk
+                        Salt + mud/stain removal 
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Exterior hand wash and towel dry
+                        Carpet & seat shampoo + odor protection
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Windows clean
+                        Full interior detail of hard surfaces 
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Tire shine + Rims clean
+                        Leather conditioning 
                     </ListStyle>
                 </div>
                 <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Shampoo floor, seats and mats 
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Full interior detail + odor protection
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <div className='col'>
+                    <div className='col text-center'>
                         Estimated time - 2.5 hours
                     </div>
                 </div>
@@ -152,60 +147,33 @@ const Packages = () => {
                     <div className='col gold-pic'/>
                 </div>
                 <div className='row'>
-                    <Price className='col'>
-                        Starting at $80
+                    <Price className='col my-3 '>
+                        Starting at $210
                     </Price>
                 </div>
                 <div className='row'>
+                    <ListStyle className='col fw-bold'>
+                        <ArrowStyle className='bi bi-arrow-90deg-down'/>
+                        Silver package, plus
+                    </ListStyle>
+                </div>
+               
+                <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Full vaccum of seats, floor and trunk
+                        Ceramic spray wax 
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Exterior hand wash and towel dry
+                        Ceramic spray wax 
                     </ListStyle>
                 </div>
+                
                 <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Windows clean
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Tire shine + Rims clean
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Shampoo floor, seats and mats 
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Full interior detail + odor protection
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <ListStyle className='col'>
-                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Full car buffing 
-                    </ListStyle>
-                </div>
-                <div className='row'>
-                    <div className='col'>
-                        Estimated time - 2.5 hours
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col'>
-                        Estimated time - 1.5 hours
+                    <div className='col text-center'>
+                        Estimated time - 3.5 hours
                     </div>
                 </div>
             </div>
