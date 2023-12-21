@@ -3,6 +3,13 @@ import * as React from "react";
 import styled from "@emotion/styled";
 import AboutUs from "../components/About";
 import Packages from "../components/Packages";
+import Services from "../components/Services";
+
+const ServiceSection = styled.section`
+  background: #16192c;
+  padding-top: 30px;
+  padding-bottom: 30px;
+`;
 
 const IndexPage = () => {
   return (
@@ -19,6 +26,9 @@ const IndexPage = () => {
         <section style={{marginTop:"200px"}}>
           <Packages />
         </section>
+        <ServiceSection style={{marginTop:"200px", marginBottom:"100px"}}>
+          <Services />
+        </ServiceSection>
 
       </body>
     </>

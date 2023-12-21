@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import { Link } from "gatsby";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
-import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Divider from '@mui/material/Divider';
@@ -15,7 +14,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { createTheme } from '@mui/material/styles';
+
 
 
 

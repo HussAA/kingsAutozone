@@ -37,6 +37,10 @@ const ListStyle = styled.div`
 const Packages = () => {
   return (
     <>
+    <div className='text-center mb-5'>
+        <h3>Packages</h3>
+        <p style={{color:"gray"}}>Our packages for vehicles</p>
+    </div>
     <div className='container-lg'>
         <div className='row'>
             {/* Bronze package */}
@@ -69,13 +73,19 @@ const Packages = () => {
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Rim & wheel cleaning
+                        Rim + Wheel cleaning
                     </ListStyle>
                 </div>
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Tire cleaning + tire shine
+                        Tire cleaning + Tire shine
+                    </ListStyle>
+                </div>
+                <div className='row'>
+                    <ListStyle className='col'>
+                        <ArrowStyle className='bi bi-bookmark-check-fill'/>
+                        Clay bar + Windows cleaning
                     </ListStyle>
                 </div>
                 <div className='row'>
@@ -115,7 +125,7 @@ const Packages = () => {
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Carpet & seat shampoo + odor protection
+                        Carpet & seat shampoo
                     </ListStyle>
                 </div>
                 <div className='row'>
@@ -127,7 +137,7 @@ const Packages = () => {
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Leather conditioning 
+                        Odor protection
                     </ListStyle>
                 </div>
                 <div className='row'>
@@ -167,7 +177,7 @@ const Packages = () => {
                 <div className='row'>
                     <ListStyle className='col'>
                         <ArrowStyle className='bi bi-bookmark-check-fill'/>
-                        Ceramic spray wax 
+                        Leather / Fabric Protection
                     </ListStyle>
                 </div>
                 
