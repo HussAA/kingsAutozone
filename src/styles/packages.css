@@ -7,7 +7,13 @@
     height: 100%;
     max-height: 400px;
     
-    
+}
+@media (max-width: 767.1px){
+    .bronze-pic{
+        min-height: 280px;
+        height: 100%;
+        max-height: 400px;
+    }
 }
 
 .silver-pic{

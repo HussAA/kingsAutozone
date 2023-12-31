@@ -4,11 +4,12 @@ import styled from "@emotion/styled";
 import AboutUs from "../components/About";
 import Packages from "../components/Packages";
 import Services from "../components/Services";
+import LandingSection from "../components/LandingSection";
 
 const ServiceSection = styled.section`
-  background: #16192c;
+  /* background: #16192c;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
 `;
 
 const IndexPage = () => {
@@ -20,6 +21,9 @@ const IndexPage = () => {
         </section>
       </header>
       <body>
+        <section>
+          <LandingSection/>
+        </section>
         <section style={{marginTop:"200px"}}>
           <AboutUs />
         </section>

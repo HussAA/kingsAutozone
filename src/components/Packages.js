@@ -2,6 +2,34 @@ import React from 'react'
 import styled from '@emotion/styled';
 
 
+const SectionTitles = styled.div`
+  font-size: 12pt;
+  color: #646363;
+  font-family: system-ui;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+`;
+const SectionHeading = styled.div`
+  font-size: 35pt;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (max-width: 600px) {
+    font-size: 25pt;
+  }
+`;
+const SectionDescription = styled.div`
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #8e8d8d;
+  margin-bottom: 50px;
+  margin-left: 23px;
+  margin-right: 23px;
+`;
 
 const BronzeTitle = styled.div`
     background: #CD7F32;
@@ -37,14 +65,18 @@ const ListStyle = styled.div`
 const Packages = () => {
   return (
     <>
-    <div className='text-center mb-5'>
-        <h3>Packages</h3>
-        <p style={{color:"gray"}}>Our packages for vehicles</p>
-    </div>
+    <SectionTitles id="Services" className="text-center text-uppercase">
+        Packages
+      </SectionTitles>
+      <SectionHeading>our packages</SectionHeading>
+      <SectionDescription>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </SectionDescription>
     <div className='container-lg'>
         <div className='row'>
             {/* Bronze package */}
-            <div className='col-md-4 border'>
+            <div className='col-md-4'>
                 <div className='row'>
                     <BronzeTitle className='col'>
                         Bronze
@@ -95,7 +127,7 @@ const Packages = () => {
                 </div>
             </div>
             {/* Silver package */}
-            <div className='col-md-4 border'>
+            <div className='col-md-4'>
                 <div className='row'>
                     <SilverTitle className='col'>
                         Silver
@@ -147,7 +179,7 @@ const Packages = () => {
                 </div>
             </div>
             {/* Gold package */}
-            <div className='col-md-4 border'>
+            <div className='col-md-4'>
                 <div className='row'>
                     <GoldTitle className='col'>
                         Gold
