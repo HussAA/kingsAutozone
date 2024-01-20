@@ -1,5 +1,16 @@
 
+@media (min-width:576px),(max-width:767px) {
+    .LogoCol{
+        margin-top: 5px;
+        
+}
+}
 
+@media (max-width:575.1px) {
+    .padding-small{
+        padding-left: 30px;
+    }
+}
     
     
 .Fabric-Protect-pic{

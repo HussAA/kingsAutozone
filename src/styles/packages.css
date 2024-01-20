@@ -35,3 +35,27 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
+/* Pricing */
+
+@media screen and (max-width:991.9px) {
+    .pricing-md-max{
+        padding-left:20%;
+        padding-right:20%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .pricing-md-max{
+        padding-left:15%;
+        padding-right:15%;
+    }
+}
+@media screen and (min-width:992px) {
+    .pricing-md-max{
+        padding-left:3%;
+        padding-right:3%;
+    }
+}

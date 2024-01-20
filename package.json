@@ -30,7 +30,9 @@
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-sharp": "^5.12.3",
     "react": "^18.2.0",
+    "react-compare-image": "^3.4.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
     "styled-components": "^6.1.1"
   }
 }

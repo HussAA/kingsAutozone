@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import _ from "lodash";
 
 const SectionTitles = styled.div`
   font-size: 12pt;
@@ -30,37 +29,11 @@ const SectionDescription = styled.div`
   margin-right: 23px;
 `;
 
-const CardTitle = styled.div`
-  font-size: 16pt;
-  color: black;
-  font-weight: bold;
-  padding-left: 4px;
-  padding-right: 4px;
-`;
 const Description = styled.div`
   font-size: 15px;
   margin-top: 10px;
 `;
-const OddCard = styled.div`
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
-  height: auto;
-  min-height: 330px;
-  width: auto;
-  min-width: 170px;
-  margin: auto;
-  background: #574a46;
-  margin-bottom: 15px;
-`;
-const EvenCard = styled.div`
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
-  height: auto;
-  min-height: 330px;
-  width: auto;
-  min-width: 170px;
-  margin: auto;
-  background: #c98968;
-  margin-bottom: 15px;
-`;
+
 const ItemsTitle = styled.div`
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -70,15 +43,52 @@ const Logo = styled.i`
   padding: 7px 10px 7px 10px;
   color: lightgray;
   background-color: #1e3f68;
-  border: 1px solid blue;
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 30px;
 `;
+
+const XLargeColService = ({ title, description }) => {
+  return (
+    <>
+      <div className="col-12 col-sm-6 mb-4 d-none d-xl-block">
+        <div className="row">
+          <div className="col-2 mb-4">
+            <Logo className="bi bi-bookmark-check" />
+          </div>
+
+          <div className="col-10">
+            <ItemsTitle>{title}</ItemsTitle>
+            <Description>{description}</Description>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+const ColService = ({ title, description }) => {
+  return (
+    <>
+      <div className="col-12 col-sm-6 mb-4 d-block d-xl-none">
+        <div className="row">
+          <div className="col-2 mb-4">
+            <Logo className="bi bi-currency-dollar" />
+          </div>
+          <div className="row">
+            <div className="col-10">
+              <ItemsTitle>{title}</ItemsTitle>
+              <Description>{description}</Description>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const Services = () => {
   return (
     <>
-      <SectionTitles id="Services" className="text-center text-uppercase">
+      <SectionTitles className="text-center text-uppercase">
         Services
       </SectionTitles>
       <SectionHeading>WHAT WE OFFER</SectionHeading>
@@ -86,133 +96,109 @@ const Services = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </SectionDescription>
-      <div className="container">
+
+      <div className="container padding-small">
         <div className="row">
+          <ColService
+            title="Auto Detailings"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Auto Detailings"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+          <ColService
+            title="Paint Protection"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Paint Protection"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+
+          <ColService
+            title="Fabric Protection"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Fabric Protection"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+          <ColService
+            title="Leather Protection"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Leather Protection"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+
+          <ColService
+            title="Decal Removal"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Decal Remover"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+          <ColService
+            title="Ceramic Coating"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Ceramic Coating"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+          <ColService
+            title="Polishing & Paint Correction"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Polishing & Paint Correction"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
+          <ColService
+            title="Headlights restoration"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua."
+          />
+          <XLargeColService
+            title="Headlights restoration"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua."
+          />
           
-          <div className="col-12 col-sm-6 ">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-              <div className="col-10">
-                <ItemsTitle>Auto Detailings</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-6 mb-4">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Paint Protection</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-6 ">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Fabric Protection</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 mb-4">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Leather Protection</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 ">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Decal Remover</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-6 mb-4">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Ceramic Coating</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-6 ">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Polishing & Paint Correction</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-6 ">
-            <div className="row">
-              <div className="col-2 mt-4">
-                <Logo className="bi bi-bookmark-check" />
-              </div>
-
-              <div className="col-10">
-                <ItemsTitle>Headlights restoration</ItemsTitle>
-                <Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Description>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </>

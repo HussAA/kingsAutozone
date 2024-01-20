@@ -1,3 +1,60 @@
+
+
+App {
+    text-align: center;
+    height: 5000px;
+  }
+  
+ .scrollTop {
+    position: fixed; 
+    width: auto;
+    left: 93%;
+    bottom: 30px;
+    align-items: right;
+    height: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.3s;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+ }
+  
+ .scrollTop:hover{
+    opacity: 1;
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(104, 103, 103);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(56, 56, 56);
+    border-radius: 0px;
+  }
+  
 .carpic{
     background: url("../images/aboutus1.jpg")
+    
 }

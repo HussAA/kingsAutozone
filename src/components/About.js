@@ -1,21 +1,12 @@
 import React from "react";
-// import { Container, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 
-// const SectionContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 400px; /* Adjust the height as needed */
 
-//   @media (min-width: 600px) {
-//     flex-direction: row;
-//   }
-// `;
 
 const LeftHalf = styled.div`
   min-height: 410px;
   box-sizing: border-box;
-  justify-content: space-between; /* Background color for the left half */
+  justify-content: space-between;
 `;
 
 const RightHalf = styled.div`
@@ -75,7 +66,7 @@ const SectionDescription = styled.div`
 const AboutUs = () => {
   return (
     <>
-      <SectionTitles id="Services" className="text-center text-uppercase">
+      <SectionTitles className="text-center text-uppercase">
         Welcome
       </SectionTitles>
       <SectionHeading>WHO WE ARE</SectionHeading>
@@ -83,7 +74,7 @@ const AboutUs = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </SectionDescription>
-      <div className="container-sm">
+      <div className="container-lg px-5">
         <div className="row">
           <LeftHalf className="col-md-5">
             <Title className="row">

@@ -70,27 +70,27 @@ const AppNavBar = (props) => {
       <Divider />
       <List>
           <ListItem >
-            <ListItemButtonStyle to="/page1" sx={{ textAlign: "center" }}>
+            <ListItemButtonStyle href="#About" sx={{ textAlign: "center" }}>
               <ListItemText primary="About"/>
             </ListItemButtonStyle>
           </ListItem>
           <ListItem >
-            <ListItemButtonStyle sx={{ textAlign: "center" }}>
+            <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
               <ListItemText primary="Services"/>
             </ListItemButtonStyle>
           </ListItem>
           <ListItem >
-            <ListItemButtonStyle sx={{ textAlign: "center" }}>
+            <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
               <ListItemText primary="Packages"/>
             </ListItemButtonStyle>
           </ListItem>
           <ListItem >
             <ListItemButtonStyle sx={{ textAlign: "center" }}>
-              <ListItemText primary="Contact Us"/>
+              <ListItemText primary="Call Us"/>
             </ListItemButtonStyle>
           </ListItem>
           <ListItem >
-            <ListItemButtonStyle sx={{ textAlign: "center" }}>
+            <ListItemButtonStyle href="#Gallery" sx={{ textAlign: "center" }}>
               <ListItemText primary="Gallery"/>
             </ListItemButtonStyle>
           </ListItem>
@@ -121,11 +121,11 @@ const AppNavBar = (props) => {
           </Typography>
 
           <Box sx={{ mr: 2, display: { xs: 'none', md: 'block' } }} style={{ marginLeft: "auto" }}>
-            <LinksStyle to="/page1">About</LinksStyle>
-            <LinksStyle to="/page2">Services</LinksStyle>
-            <LinksStyle to="/page2">Packages</LinksStyle>
-            <LinksStyle to="/page2">Contact us</LinksStyle>
-            <LinksStyle to="/page2">Gallery</LinksStyle>
+            <LinksStyle href="#About">About</LinksStyle>
+            <LinksStyle href="#Services">Services</LinksStyle>
+            <LinksStyle href="#Packages">Packages</LinksStyle>
+            <LinksStyle href="tel:999-999-9999">Call us</LinksStyle>
+            <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle variant="contained">Book Now</BookButtonStyle>
           </Box>
           <Box sx={{ mr: 2, display: { md: 'none' } }} style={{ marginLeft: "auto" }}>
