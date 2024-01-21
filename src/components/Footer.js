@@ -42,8 +42,8 @@ const Footer = () => {
         <div className="p-3">
           <Footerlink href="#About">About</Footerlink>
           <Footerlink href="#">Book now</Footerlink>
-          <Footerlink href="#Packages" >Packages</Footerlink>
-          <Footerlink href="#Services">Our Services</Footerlink>
+          <Footerlink href="#Packages">Packages</Footerlink>
+          <Footerlink href="#Services">Services</Footerlink>
           <Footerlink onClick={scrollTop}>Back To Top</Footerlink>
         </div>
       </FooterContainer>

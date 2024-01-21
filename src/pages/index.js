@@ -31,12 +31,12 @@ const IndexPage = () => {
         <section id="About" style={{ marginTop: "100px", paddingTop: "120px" }}>
           <AboutUs />
         </section>
-        <div
+        {/* <div
           id="Packages"
           style={{ marginTop: "100px", paddingTop: "120px" }}
         >
           <Packages />
-        </div>
+        </div> */}
         <PricingSection style={{ marginTop: "100px", paddingTop: "120px" }}>
           <Pricing />
         </PricingSection>
