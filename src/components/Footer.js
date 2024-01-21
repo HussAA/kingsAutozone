@@ -6,6 +6,7 @@ const FooterContainer = styled.footer`
   text-align: center;
   min-height: 150px;
   padding: 35px;
+
 `;
 const FooterBottom = styled.div`
   min-height: 35px;
@@ -39,9 +40,10 @@ const Footer = () => {
           <Icon className="bi bi-instagram" />
           <Icon className="bi bi-google" />
         </div>
-        <div className="p-3">
+        <div className="p-3 ">
           <Footerlink href="#About">About</Footerlink>
-          <Footerlink href="#">Book now</Footerlink>
+          <Footerlink href="#">Book Now</Footerlink>
+          <div className="d-sm-none"/>
           <Footerlink href="#Packages">Packages</Footerlink>
           <Footerlink href="#Services">Services</Footerlink>
           <Footerlink onClick={scrollTop}>Back To Top</Footerlink>
