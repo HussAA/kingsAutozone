@@ -2,7 +2,6 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Link } from "gatsby";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 import Box from '@mui/material/Box';
@@ -31,7 +30,7 @@ const AppBarStyle = styled(AppBar)`
   background: white;
   position: fixed;
 `;
-const LinksStyle = styled(Link)`
+const LinksStyle = styled.a`
   color: black;
   text-decoration: none;
   text-transform: uppercase;
@@ -115,9 +114,9 @@ const AppNavBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography  variant="h6" component="div">
-            <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+            <div href='/' style={{ color: "black", textDecoration: "none" }}>
               Springs Auto Care
-            </Link>
+            </div>
           </Typography>
 
           <Box sx={{ mr: 2, display: { xs: 'none', md: 'block' } }} style={{ marginLeft: "auto" }}>
