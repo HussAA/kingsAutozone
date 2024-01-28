@@ -4,3 +4,19 @@
         padding-right: 40px;
     }
 }
+
+
+/* FOOTER */
+
+.bi-facebook:hover{
+    color: #1877F2;
+}
+.bi-instagram:hover{
+    color: #962fbf;
+}
+.bi-google:hover{
+    color: rgb(1, 112, 1);
+}
+.bi-envelope-plus:hover{
+    color: rgb(165, 42, 42);
+}

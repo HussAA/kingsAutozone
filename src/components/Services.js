@@ -23,7 +23,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #8e8d8d;
+  color: #6E6E6E;
   margin-bottom: 50px;
   margin-left: 23px;
   margin-right: 23px;
@@ -100,16 +100,12 @@ const Services = () => {
       <div className="container padding-small">
         <div className="row">
           <ColService
-            title="Auto Detailings"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua."
+            title="Auto Detailing"
+            description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
           />
           <XLargeColService
-            title="Auto Detailings"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua."
+            title="Auto Detailing"
+            description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
           />
           <ColService
             title="Paint Protection"
@@ -197,8 +193,6 @@ const Services = () => {
           do eiusmod tempor incididunt ut labore et dolore magna
           aliqua."
           />
-          
-          
         </div>
       </div>
     </>

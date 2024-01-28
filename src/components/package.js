@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import Checkmark from "../images/checkmark.png";
-
+import { TawkContext } from "../providers"
 const PackageTitle = styled.div`
   font-size: 12pt;
   color: white;
@@ -16,7 +16,7 @@ const SectionHeading = styled.div`
   font-size: 35pt;
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   @media screen and (max-width: 600px) {
     font-size: 25pt;
   }
@@ -25,7 +25,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: gray;
+  color: #979797;
   margin-bottom: 40px;
   margin-left: 23px;
   margin-right: 23px;
@@ -145,7 +145,7 @@ const PricingButtonCenter = styled.button`
   height: 46px;
   border-radius: 7px;
   background: #5e6aba;
-  color: white;
+  color: black;
   border: 0;
   font-size: 14pt;
   margin-top: 45px;
@@ -183,12 +183,13 @@ const ListStyle2 = styled.div`
   color: #5e6aba;
 `;
 const Pricing = () => {
+  const { tawkMessenger } = React.useContext(TawkContext)
   return (
     <>
       <PackageTitle id="Packages" className="text-center text-uppercase">
         packages
       </PackageTitle>
-      <SectionHeading>OUR LUXURY PACKAGES</SectionHeading>
+      <SectionHeading>OUR PACKAGES</SectionHeading>
       <SectionDescription>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
@@ -238,18 +239,25 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Rims, Wheels & Tires clean
+                  Tires clean & Tire shine
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Odor protection + Tire shine
+                  Odor Refreshener
                   <br />
                 </PricingFeatures>
               </div>
               <div className="text-center mt-2">
-                <PricingButton className="col">Book Now</PricingButton>
+                <PricingButton
+                  onClick={() => {
+                    tawkMessenger.toggle();
+                  }}
+                  className="col"
+                >
+                  Book Now
+                </PricingButton>
               </div>
             </PricingCard>
           </PricingColumn>
@@ -284,7 +292,7 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Clay bar
+                  Rim & Wheel scrubbed
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
@@ -303,13 +311,18 @@ const Pricing = () => {
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
                   Door jams scrubbed down
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
                 </PricingFeaturesCenter>
               </div>
               <div className="text-center">
-                <PricingButtonCenter className="col">
-                  Get started
+                <PricingButtonCenter
+                  onClick={() => {
+                    tawkMessenger.toggle();
+                  }}
+                  className="col"
+                >
+                  Book Now
                 </PricingButtonCenter>
               </div>
             </PricingCardCenter>
@@ -341,7 +354,7 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Ceramic spray wax
+                  Clay bar
                 </PricingFeatures>
               </div>
               <div className="row">
@@ -353,7 +366,7 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Paint Protection
+                  Ceramic wax
                   <br />
                   <br />
                   <br />
@@ -363,12 +376,20 @@ const Pricing = () => {
               </div>
 
               <div className="text-center">
-                <PricingButton className="col">Get started</PricingButton>
+                <PricingButton
+                  onClick={() => {
+                    tawkMessenger.toggle();
+                  }}
+                  className="col"
+                >
+                  Book Now
+                </PricingButton>
               </div>
             </PricingCard>
           </PricingColumn>
         </div>
       </div>
+      
     </>
   );
 };

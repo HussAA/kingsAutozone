@@ -4,18 +4,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Divider from '@mui/material/Divider';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-
-
-
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Divider from "@mui/material/Divider";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import { TawkContext } from "../providers";
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
@@ -53,7 +51,7 @@ const BookButtonStyle = styled(Button)`
 const drawerWidth = 240;
 
 const AppNavBar = (props) => {
-  
+  const { tawkMessenger } = React.useContext(TawkContext)
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -64,35 +62,35 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      Springs Auto Care
+        Springs Auto Care
       </Typography>
       <Divider />
       <List>
-          <ListItem >
-            <ListItemButtonStyle href="#About" sx={{ textAlign: "center" }}>
-              <ListItemText primary="About"/>
-            </ListItemButtonStyle>
-          </ListItem>
-          <ListItem >
-            <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
-              <ListItemText primary="Services"/>
-            </ListItemButtonStyle>
-          </ListItem>
-          <ListItem >
-            <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
-              <ListItemText primary="Packages"/>
-            </ListItemButtonStyle>
-          </ListItem>
-          <ListItem >
-            <ListItemButtonStyle sx={{ textAlign: "center" }}>
-              <ListItemText primary="Call Us"/>
-            </ListItemButtonStyle>
-          </ListItem>
-          <ListItem >
-            <ListItemButtonStyle href="#Gallery" sx={{ textAlign: "center" }}>
-              <ListItemText primary="Gallery"/>
-            </ListItemButtonStyle>
-          </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="#About" sx={{ textAlign: "center" }}>
+            <ListItemText primary="About" />
+          </ListItemButtonStyle>
+        </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Services" />
+          </ListItemButtonStyle>
+        </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Packages" />
+          </ListItemButtonStyle>
+        </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="tel:999-999-9999" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Call Us" />
+          </ListItemButtonStyle>
+        </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="#Gallery" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Gallery" />
+          </ListItemButtonStyle>
+        </ListItem>
       </List>
     </Box>
   );
@@ -103,33 +101,53 @@ const AppNavBar = (props) => {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBarStyle>
-        <Toolbar sx={{marginTop:"auto",marginBottom:"auto"}}>
-        <IconButton
+        <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
+          <IconButton
             color="dark"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: 'none' } }}
+            sx={{ mr: 2, display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography  variant="h6" component="div">
-            <div href='/' style={{ color: "black", textDecoration: "none" }}>
+          <Typography variant="h6" component="div">
+            <div href="/" style={{ color: "black", textDecoration: "none" }}>
               Springs Auto Care
             </div>
           </Typography>
 
-          <Box sx={{ mr: 2, display: { xs: 'none', md: 'block' } }} style={{ marginLeft: "auto" }}>
+          <Box
+            sx={{ mr: 2, display: { xs: "none", md: "block" } }}
+            style={{ marginLeft: "auto" }}
+          >
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
             <LinksStyle href="tel:999-999-9999">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
-            <BookButtonStyle variant="contained">Book Now</BookButtonStyle>
+            <BookButtonStyle
+              onClick={() => {
+                tawkMessenger.toggle();
+              }}
+              variant="contained"
+            >
+              Book Now
+            </BookButtonStyle>
           </Box>
-          <Box sx={{ mr: 2, display: { md: 'none' } }} style={{ marginLeft: "auto" }}>
-          <BookButtonStyle variant="contained">Book Now</BookButtonStyle>
-          </Box >
+          <Box
+            sx={{ mr: 2, display: { md: "none" } }}
+            style={{ marginLeft: "auto" }}
+          >
+            <BookButtonStyle
+              onClick={() => {
+                tawkMessenger.toggle();
+              }}
+              variant="contained"
+            >
+              Book Now
+            </BookButtonStyle>
+          </Box>
         </Toolbar>
       </AppBarStyle>
       <nav>

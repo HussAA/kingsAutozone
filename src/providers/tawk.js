@@ -24,6 +24,7 @@ const TawkContextProvider = ({ children }) => {
         onLoad={onLoad}
         ref={tawkMessengerRef}
       />
+    
       {children}
     </TawkContext.Provider>
   )

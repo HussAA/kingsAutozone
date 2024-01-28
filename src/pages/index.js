@@ -9,11 +9,18 @@ import Gallery from "../components/Gallery";
 import ScrollArrow from "../components/ScrollButton";
 import Pricing from "../components/package";
 import Footer from "../components/Footer";
-
+import AddOn from "../components/AddOn";
 const PricingSection = styled.section`
   background: #1e3f68;
   padding-top: 20px;
   padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (max-width:991px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
 `;
 
 const IndexPage = () => {
@@ -28,7 +35,7 @@ const IndexPage = () => {
         <section>
           <LandingSection />
         </section>
-        <section id="About" style={{ marginTop: "100px", paddingTop: "120px" }}>
+        <section id="About" style={{ marginTop: "80px", paddingTop: "80px" }}>
           <AboutUs />
         </section>
         {/* <div
@@ -39,11 +46,13 @@ const IndexPage = () => {
         </div> */}
         <PricingSection style={{ marginTop: "100px", paddingTop: "120px" }}>
           <Pricing />
+          <div>
+            <AddOn/>
+          </div>
         </PricingSection>
         <section
           id="Services"
           style={{
-            marginTop: "100px",
             marginBottom: "100px",
             paddingTop: "120px",
           }}
@@ -53,9 +62,8 @@ const IndexPage = () => {
         <section
           id="Gallery"
           style={{
-            marginTop: "100px",
             marginBottom: "100px",
-            paddingTop: "120px",
+            paddingTop: "50px",
           }}
         >
           <Gallery />

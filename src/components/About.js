@@ -57,7 +57,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #8e8d8d;
+  color: #6E6E6E;
   margin-bottom: 70px;
   margin-left: 23px;
   margin-right: 23px;
