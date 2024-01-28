@@ -6,12 +6,11 @@ module.exports = {
     title: `sparklesAutoSpa`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",'gatsby-plugin-react-helmet', {
-    resolve: 'gatsby-source-filesystem',
+  plugins: ['gatsby-plugin-react-helmet', 
+  {
+    resolve: 'gatsby-plugin-manifest',
     options: {
-      "name": "images",
-      "path": "./src/images/"
+      "icon": "src/images/icons8-car-wash-96.png"
     },
-    __key: "images"
   }]
 };

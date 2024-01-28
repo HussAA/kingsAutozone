@@ -10,6 +10,7 @@ import ScrollArrow from "../components/ScrollButton";
 import Pricing from "../components/package";
 import Footer from "../components/Footer";
 import AddOn from "../components/AddOn";
+import { Helmet } from "react-helmet";
 const PricingSection = styled.section`
   background: #1e3f68;
   padding-top: 20px;
@@ -26,6 +27,9 @@ const PricingSection = styled.section`
 const IndexPage = () => {
   return (
     <>
+     <Helmet>
+        <title>Springs Auto Care</title>
+      </Helmet>
       <header>
         <section style={{ minHeight: "100px" }}>
           <AppNavBar />
