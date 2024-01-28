@@ -10,7 +10,7 @@ module.exports = {
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icons8-car-wash-96.png"
+      "icon": "src/images/letter-s.png"
     },
   }]
 };
