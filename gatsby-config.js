@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `SpringsAutoCare`,
+    title: `sparklesAutoSpa`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",'gatsby-plugin-react-helmet', {
