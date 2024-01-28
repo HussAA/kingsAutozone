@@ -30,7 +30,7 @@ const Overlay = styled.div`
     @media (max-width:730.1px) {
         left: 20%;
         width: 60%;
-        top: 42%;
+        top: 49%;
 }
     @media (min-width:1300px){
         top: 93%;
