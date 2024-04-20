@@ -92,7 +92,7 @@ const AboutUs = () => {
             </LeftText>
           </LeftHalf>
 
-          <RightHalf alt="car" className="col-md-7 carpic" />
+          <div className="col-md-7 carpic" />
         </div>
       </div>
     </>
