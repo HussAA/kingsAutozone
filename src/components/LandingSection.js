@@ -30,10 +30,10 @@ const Overlay = styled.div`
     @media (max-width:730.1px) {
         left: 20%;
         width: 60%;
-        top: 49%;
+        top: 44%;
 }
     @media (min-width:1300px){
-        top: 93%;
+        top: 88%;
     }
 `
 const SloganPortfolio = () => {
@@ -52,6 +52,8 @@ const SloganPortfolio = () => {
   const Masthead = styled.div`
   height: 60vh;
   margin-top: auto;
+  margin-left: 25px;
+  margin-right: 25px;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
       to bottom,
@@ -64,10 +66,12 @@ const SloganPortfolio = () => {
   background-size: cover;
 
   @media (min-width: 1299.6px) {
-    height: 85vh;
+    height: 80vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
+    margin-left: 45px;
+    margin-right: 45px;
   }
   @media (max-width: 730px) {
     height: 35vh;
