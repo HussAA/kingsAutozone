@@ -42,7 +42,7 @@ const BookButtonStyle = styled(Button)`
   color: white;
   margin-left: 16px;
   background: #1e3f68;
-
+  white-space: nowrap;
   &:hover {
     background: #3e699e;
   }
