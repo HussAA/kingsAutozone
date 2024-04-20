@@ -28,7 +28,7 @@ const IndexPage = () => {
   return (
     <>
      <Helmet>
-        <title>Springs Auto Care</title>
+        <title>Mustache Mobile Detailing</title>
       </Helmet>
       <header>
         <section style={{ minHeight: "100px" }}>

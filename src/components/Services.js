@@ -23,7 +23,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #6E6E6E;
+  color: #6e6e6e;
   margin-bottom: 50px;
   margin-left: 23px;
   margin-right: 23px;
@@ -71,7 +71,7 @@ const ColService = ({ title, description }) => {
       <div className="col-12 col-sm-6 mb-4 d-block d-xl-none">
         <div className="row">
           <div className="col-2 mb-4">
-            <Logo className="bi bi-currency-dollar" />
+            <Logo className="bi bi-bookmark-check" />
           </div>
           <div className="row">
             <div className="col-10">
@@ -100,11 +100,27 @@ const Services = () => {
       <div className="container padding-small">
         <div className="row">
           <ColService
-            title="Auto Detailing"
+            title="Vehicles Detailing"
             description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
           />
           <XLargeColService
-            title="Auto Detailing"
+            title="Vehicles Detailing"
+            description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
+          />
+          <ColService
+            title="Boats Detailing"
+            description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
+          />
+          <XLargeColService
+            title="Boats Detailing"
+            description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
+          />
+          <ColService
+            title="RV/ Trailer Detailing"
+            description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
+          />
+          <XLargeColService
+            title="RV/ Trailer Detailing"
             description="We detail Vehicles, motorhomes, boats, trailers, commercial equipment and more."
           />
           <ColService
@@ -170,13 +186,13 @@ const Services = () => {
           aliqua."
           />
           <ColService
-            title="Polishing & Paint Correction"
+            title="Paint Correction"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna
             aliqua."
           />
           <XLargeColService
-            title="Polishing & Paint Correction"
+            title="Paint Correction"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
           do eiusmod tempor incididunt ut labore et dolore magna
           aliqua."

@@ -41,7 +41,7 @@ const SloganPortfolio = () => {
       <>
         <div className="container text-center">
           <Overlay className="shadow">
-            <Slogan>"Sparkle and Shine, Every Detail in Line!"</Slogan>
+            <Slogan>Ottawa, Ontario (45KM radius) </Slogan>
           </Overlay>
         </div>
       </>

@@ -34,6 +34,10 @@ class Gallery extends Component {
   render() {
     const before = require("../images/Detailing-before.png").default;
     const after = require("../images/Detailing-after.png").default;
+    const before1 = require("../images/before_1.jpeg").default;
+    const after1 = require("../images/after_1.jpeg").default;
+    const before2 = require("../images/before_2.jpeg").default;
+    const after2 = require("../images/after_2.jpeg").default;
 
     return (
       <>
@@ -49,13 +53,13 @@ class Gallery extends Component {
         <div className="container mb-5 padding-gallery">
           <div className="row">
             <div className="col-lg-4 mb-5 mb-lg-0">
-              <ReactCompareImage leftImage={before} rightImage={after} />
+              <ReactCompareImage alt="before/after pics" leftImage={before} rightImage={after} />
             </div>
             <div className="col-lg-4 mb-5 mb-lg-0">
-              <ReactCompareImage leftImage={before} rightImage={after} />
+              <ReactCompareImage alt="before/after pics" leftImage={before1} rightImage={after1} />
             </div>
             <div className="col-lg-4 mb-5 mb-lg-0">
-              <ReactCompareImage leftImage={before} rightImage={after} />
+              <ReactCompareImage alt="before/after pics" leftImage={before2} rightImage={after2} />
             </div>
           </div>
         </div>

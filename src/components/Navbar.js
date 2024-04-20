@@ -62,7 +62,7 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Springs Auto Care
+      Mustache Mobile Detailing
       </Typography>
       <Divider />
       <List>
@@ -82,7 +82,7 @@ const AppNavBar = (props) => {
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
-          <ListItemButtonStyle href="tel:999-999-9999" sx={{ textAlign: "center" }}>
+          <ListItemButtonStyle href="tel:+1613-790-4775" sx={{ textAlign: "center" }}>
             <ListItemText primary="Call Us" />
           </ListItemButtonStyle>
         </ListItem>
@@ -113,7 +113,7 @@ const AppNavBar = (props) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <div href="/" style={{ color: "black", textDecoration: "none" }}>
-              Springs Auto Care
+            Mustache Mobile Detailing
             </div>
           </Typography>
 
@@ -124,7 +124,7 @@ const AppNavBar = (props) => {
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle href="tel:999-999-9999">Call us</LinksStyle>
+            <LinksStyle href="tel:+1613-790-4775">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {

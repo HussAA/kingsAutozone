@@ -10,7 +10,7 @@ module.exports = {
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/letter-s.png"
+      "icon": "src/images/moustache.png"
     },
   }]
 };

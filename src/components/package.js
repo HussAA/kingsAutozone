@@ -203,7 +203,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $125 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $90 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
@@ -274,7 +274,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $170 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $125 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
@@ -335,7 +335,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $215 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $195 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">

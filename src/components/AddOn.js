@@ -29,7 +29,7 @@ const Logo = styled.i`
 const AddOn = () => {
   return (
     <>
-      <PackageTitle className="text-center ">Add-ons (20% off with Diamond Package)</PackageTitle>
+      <PackageTitle className="text-center ">Add-ons (20% off with Premium Package)</PackageTitle>
 
       <div className="container">
         <div className="row">

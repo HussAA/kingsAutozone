@@ -14,7 +14,7 @@ const RightHalf = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 70vh;
+  max-width: 80vh;
 `;
 
 const Title = styled.div`
@@ -92,7 +92,7 @@ const AboutUs = () => {
             </LeftText>
           </LeftHalf>
 
-          <RightHalf className="col-md-7 carpic" />
+          <RightHalf alt="car" className="col-md-7 carpic" />
         </div>
       </div>
     </>

@@ -18,5 +18,8 @@
     color: rgb(1, 112, 1);
 }
 .bi-envelope-plus:hover{
+    color: rgb(73, 183, 216);
+}
+.bi-telephone:hover{
     color: rgb(165, 42, 42);
 }
