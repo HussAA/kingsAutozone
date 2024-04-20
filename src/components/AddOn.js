@@ -13,56 +13,51 @@ const PackageTitle = styled.div`
 `;
 
 const Items = styled.div`
-    color: white;
-    font-size: 18px;
+  color: white;
+  font-size: 18px;
 
-    @media (min-width: 991.1px) {
-        margin-left: 60px;
-    }
-
+  
 `;
 const Logo = styled.i`
-    margin-right: 10px;
-    color: yellow;
-
-`
+  margin-right: 10px;
+  color: yellow;
+`;
 const AddOn = () => {
   return (
     <>
-      <PackageTitle className="text-center ">Add-ons (20% off with Premium Package)</PackageTitle>
+      <PackageTitle className="text-center">
+        Add-ons (20% off with Premium Package)
+      </PackageTitle>
 
       <div className="container">
         <div className="row">
-            <Items className="col-12">
-                <Logo className="bi bi-bookmark-plus"/>
+          <Items className="col-12">
+            <Logo className="bi bi-bookmark-plus" />
             Ozone Treatment
-            </Items>
-            <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus"/>
+          </Items>
+          <Items className="col-12">
+            <Logo className="bi bi-bookmark-plus" />
             Paint Sealant
-            </Items>
-            <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus"/>
+          </Items>
+          <Items className="col-12">
+            <Logo className="bi bi-bookmark-plus" />
             Engine Detailing
-            </Items>
-            <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus"/>
+          </Items>
+          <Items className="col-12">
+            <Logo className="bi bi-bookmark-plus" />
             Pet Hair Removal
-            </Items>
-            <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus"/>
+          </Items>
+          <Items className="col-12">
+            <Logo className="bi bi-bookmark-plus" />
             Leather Protection
-            </Items>
-            <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus"/>
+          </Items>
+          <Items className="col-12">
+            <Logo className="bi bi-bookmark-plus" />
             Fabric Protection
-            </Items>
+          </Items>
         </div>
-        
       </div>
     </>
-    
-
   );
 };
 

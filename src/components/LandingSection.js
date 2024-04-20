@@ -18,7 +18,7 @@ const Slogan = styled.div`
 `;
 const Overlay = styled.div`
     position: absolute;
-    top: 68%;
+    top: 96%;
     left: 25%;
     width: 50%;
     height: auto;
@@ -30,10 +30,10 @@ const Overlay = styled.div`
     @media (max-width:730.1px) {
         left: 20%;
         width: 60%;
-        top: 44%;
+        top: 95%;
 }
     @media (min-width:1300px){
-        top: 88%;
+        top: 97%;
     }
 `
 const SloganPortfolio = () => {
@@ -50,10 +50,9 @@ const SloganPortfolio = () => {
 
 
   const Masthead = styled.div`
+  position: relative;
   height: 60vh;
   margin-top: auto;
-  margin-left: 25px;
-  margin-right: 25px;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
       to bottom,
@@ -81,7 +80,7 @@ const LandingSection = () => {
   return (
     <>
       <Masthead>
-        <div className="container ">
+        <div className="container">
             <SloganPortfolio />
         </div>
       </Masthead>
