@@ -55,6 +55,7 @@ html {
   }
   
 .carpic{
+    position: relative;
     background: url("../images/aboutus1.jpg");
     min-height: 410px;
     background-size: cover;
