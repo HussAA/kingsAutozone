@@ -53,9 +53,10 @@ const Footer = () => {
           <a target="_blank" rel="noreferrer" href="mailto:mah.hussaina@gmail.com">
             <Icon className="bi bi-envelope-plus" />
           </a>
-          <a target="_blank" rel="noreferrer" href="tel:+1613-790-4775">
+          <a target="_blank" rel="noreferrer">
             <Icon className="bi bi-telephone" />
           </a>
+          {/* href="tel:+1613-790-4775" */}
         </div>
         <div className="p-3 ">
           <Footerlink href="#About">About</Footerlink>

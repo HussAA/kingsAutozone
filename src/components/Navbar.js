@@ -81,8 +81,8 @@ const AppNavBar = (props) => {
             <ListItemText primary="Packages" />
           </ListItemButtonStyle>
         </ListItem>
-        <ListItem>
-          <ListItemButtonStyle href="tel:+1613-790-4775" sx={{ textAlign: "center" }}>
+        <ListItem>{/* href="tel:+1613-790-4775" */}
+          <ListItemButtonStyle sx={{ textAlign: "center" }}>
             <ListItemText primary="Call Us" />
           </ListItemButtonStyle>
         </ListItem>
@@ -120,11 +120,11 @@ const AppNavBar = (props) => {
           <Box
             sx={{ mr: 2, display: { xs: "none", md: "block" } }}
             style={{ marginLeft: "auto" }}
-          >
+          >{/* href="tel:+1613-790-4775" */}
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle href="tel:+1613-790-4775">Call us</LinksStyle>
+            <LinksStyle>Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {
