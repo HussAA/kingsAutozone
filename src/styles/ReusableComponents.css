@@ -1,0 +1,94 @@
+/* Services */
+.icon i {
+    font-size: 25pt;
+    line-height: 0;
+  }
+  
+  .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    color: rgb(92, 159, 36);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+  }
+
+/* Why Us */
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title .section-h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5c9f24;
+}
+
+.section-title .section-p {
+    margin-bottom: 0;
+}
+.box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+}
+.box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #8ed851;
+}
+.box-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #2a2a2a;
+}
+.box-p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* FAQ */
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-question {
+    border-color: white;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: #343a40; /* Initial text color (blue) */
+  }
+  
+  .faq-question:hover {
+    color: #5c9f24; /* Text color on hover (green) */
+  }
+  
+  .faq-question:active,
+  .faq-question:focus {
+    color: #5c9f24; /* Text color when clicked or focused (green) */
+  }
+
+  
