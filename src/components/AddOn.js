@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const PackageTitle = styled.div`
-  font-size: 15pt;
+  font-size: 16pt;
   color: white;
   margin-top: 30px;
   margin-bottom: 50px;
