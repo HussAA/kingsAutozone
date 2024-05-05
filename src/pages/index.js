@@ -2,7 +2,6 @@ import AppNavBar from "../components/Navbar";
 import * as React from "react";
 import styled from "@emotion/styled";
 import AboutUs from "../components/About";
-// import Packages from "../components/Packages";
 import Services from "../components/Services";
 import LandingSection from "../components/LandingSection";
 import Gallery from "../components/Gallery";
@@ -28,7 +27,7 @@ const IndexPage = () => {
   return (
     <>
      <Helmet>
-        <title>Mustache Mobile Detailing</title>
+        <title>Detailxpertz</title>
       </Helmet>
       <header>
         <section style={{ minHeight: "100px" }}>
@@ -54,7 +53,7 @@ const IndexPage = () => {
             <AddOn/>
           </div>
         </PricingSection>
-        <section
+        {/* <section
           id="Services"
           style={{
             marginBottom: "100px",
@@ -62,7 +61,7 @@ const IndexPage = () => {
           }}
         >
           <Services />
-        </section>
+        </section> */}
         <section
           id="Gallery"
           style={{

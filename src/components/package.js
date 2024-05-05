@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import Checkmark from "../images/checkmark.png";
-import { TawkContext } from "../providers"
+import { TawkContext } from "../providers";
 const PackageTitle = styled.div`
   font-size: 12pt;
   color: white;
@@ -112,19 +112,22 @@ const Check = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 15px;
+  margin-top: 2px;
 `;
 const PricingFeatures = styled.div`
   font-size: 15px;
   color: black;
   margin-bottom: 15px;
-
+  display: flex;
   @media screen and (min-width: 500px), (max-width: 768px) {
   }
 `;
+
 const PricingFeaturesCenter = styled.div`
   font-size: 15px;
   color: white;
   margin-bottom: 15px;
+  display: flex;
 `;
 
 const PricingButton = styled.button`
@@ -183,7 +186,7 @@ const ListStyle2 = styled.div`
   color: #5e6aba;
 `;
 const Pricing = () => {
-  const { tawkMessenger } = React.useContext(TawkContext)
+  const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
       <PackageTitle id="Packages" className="text-center text-uppercase">
@@ -199,11 +202,11 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Standard</PricingTitles>
+                <PricingTitles className="col">Basic</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $90 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $119.99 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
@@ -219,33 +222,28 @@ const Pricing = () => {
                 </PricingFeatures>
               </div>
               <div className="row">
-                <PricingFeatures className="col">
+                <PricingFeatures className="col ">
                   <Check src={Checkmark} />
-                  Exterior hand wash + mats
+                  Clean/disinfect seats
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Interior & Windows wiped down
+                  Steam dash, cup holder, & console
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Door jams pressure washed
+                  Clean doors & windows
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Tires clean & Tire shine
-                </PricingFeatures>
-              </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  Odor Refreshener
+                  NEW CAR SMELL!!!
+                  <br />
                   <br />
                 </PricingFeatures>
               </div>
@@ -269,12 +267,12 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingTitlesCenter className="col">
-                  Platinum
+                  Absolute
                 </PricingTitlesCenter>
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $125 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $149.99 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
@@ -286,31 +284,31 @@ const Pricing = () => {
               <div className="row">
                 <ListStyle className="col">
                   <ArrowStyle className="bi bi-arrow-90deg-down" />
-                  Standard package, plus
+                  Basic package, plus
                 </ListStyle>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Rim & Wheel scrubbed
+                  Steam Seats + Shampoo floor
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Salt + mud/stain removal
+                  Steam vents, pillars, sun visor, pedals & steering wheel
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Carpet & seats shampooed
+                  Vacuum trunk
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Door jams scrubbed down
+                  Clean leather
                   <br />
                   <br />
                 </PricingFeaturesCenter>
@@ -331,11 +329,11 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Premium</PricingTitles>
+                <PricingTitles className="col">Supreme</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $195 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $199.99 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
@@ -348,30 +346,37 @@ const Pricing = () => {
               <div className="row">
                 <ListStyle2 className="col">
                   <ArrowStyle2 className="bi bi-arrow-90deg-down" />
-                  Platinum package, plus
+                  Absolute package, plus
                 </ListStyle2>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Clay bar
+                  1 Set floor mats
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Leather / Fabric Protection
+                  Steam/protect console area
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Ceramic wax
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+                  Leather Protection
+                </PricingFeatures>
+              </div>
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Plastic Restoration
+                </PricingFeatures>
+              </div>
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Steam door sills, grab bars & ceiling light
                 </PricingFeatures>
               </div>
 
@@ -389,7 +394,6 @@ const Pricing = () => {
           </PricingColumn>
         </div>
       </div>
-      
     </>
   );
 };

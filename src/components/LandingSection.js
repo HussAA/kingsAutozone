@@ -41,7 +41,7 @@ const SloganPortfolio = () => {
       <>
         <div className="container text-center">
           <Overlay className="shadow">
-            <Slogan>Ottawa, Ontario (45KM radius) </Slogan>
+            <Slogan>Edmonton, AB, Canada (20KM radius) </Slogan>
           </Overlay>
         </div>
       </>

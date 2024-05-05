@@ -62,7 +62,7 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      Mustache Mobile Detailing
+      Detail<i class="bi bi-twitter-x"></i>PERTZ
       </Typography>
       <Divider />
       <List>
@@ -81,9 +81,9 @@ const AppNavBar = (props) => {
             <ListItemText primary="Packages" />
           </ListItemButtonStyle>
         </ListItem>
-        <ListItem>{/* href="tel:+1613-790-4775" */}
-          <ListItemButtonStyle sx={{ textAlign: "center" }}>
-            <ListItemText primary="Call Us" />
+        <ListItem>
+          <ListItemButtonStyle href="tel:+1613-790-4775" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Call Us"/>
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
@@ -113,18 +113,18 @@ const AppNavBar = (props) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <div href="/" style={{ color: "black", textDecoration: "none" }}>
-            Mustache Mobile Detailing
+            Detail<i class="bi bi-twitter-x"></i>PERTZ
             </div>
           </Typography>
 
           <Box
             sx={{ mr: 2, display: { xs: "none", md: "block" } }}
             style={{ marginLeft: "auto" }}
-          >{/* href="tel:+1613-790-4775" */}
+          >
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle>Call us</LinksStyle>
+            <LinksStyle href="tel:+1587-578-1512">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {

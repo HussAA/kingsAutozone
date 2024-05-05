@@ -71,6 +71,7 @@ const AboutUs = () => {
       </SectionTitles>
       <SectionHeading>WHO WE ARE</SectionHeading>
       <SectionDescription>
+        
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </SectionDescription>
@@ -79,7 +80,7 @@ const AboutUs = () => {
           <LeftHalf className="col-md-5">
             <Title className="row">
               <div className="col fs-6">
-                ABOUT US <br /> <SecondTitle>Auto Detailing</SecondTitle>
+                ABOUT US <br /> <SecondTitle>Detailing Experts</SecondTitle>
               </div>
             </Title>
 

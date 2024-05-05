@@ -41,22 +41,21 @@ const Footer = () => {
     <>
       <FooterContainer>
         <div>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/mydetailxpertz/" target="_blank" rel="noreferrer">
             <Icon className="bi bi-facebook" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/mydetailxpertz/" target="_blank" rel="noreferrer">
             <Icon className="bi bi-instagram" />
           </a>
           <a href="https://www.google.com/intl/en_ca/business/" target="_blank" rel="noreferrer">
             <Icon className="bi bi-google" />
           </a>
-          <a target="_blank" rel="noreferrer" href="mailto:mah.hussaina@gmail.com">
+          <a target="_blank" rel="noreferrer" href="mailto:Detailxpertz@yahoo.com">
             <Icon className="bi bi-envelope-plus" />
           </a>
-          <a target="_blank" rel="noreferrer">
+          <a target="_blank" rel="noreferrer" href="tel:+1587-578-1512">
             <Icon className="bi bi-telephone" />
           </a>
-          {/* href="tel:+1613-790-4775" */}
         </div>
         <div className="p-3 ">
           <Footerlink href="#About">About</Footerlink>
