@@ -14,6 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
@@ -39,19 +40,19 @@ const LinksStyle = styled.a`
   }
 `;
 const BookButtonStyle = styled(Button)`
-  color: white;
+  color: black;
   margin-left: 16px;
-  background: #1e3f68;
+  background: #e0bd01;
   white-space: nowrap;
   &:hover {
-    background: #3e699e;
+    background: #c5a703;
   }
 `;
 
 const drawerWidth = 240;
 
 const AppNavBar = (props) => {
-  const { tawkMessenger } = React.useContext(TawkContext)
+  const { tawkMessenger } = React.useContext(TawkContext);
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -62,7 +63,12 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      Mustache Mobile Detailing
+        King's<StaticImage
+                src="../images/crown.png"
+                width={25}
+                height={25}
+                alt="crown logo"
+              />Autozone
       </Typography>
       <Divider />
       <List>
@@ -81,8 +87,11 @@ const AppNavBar = (props) => {
             <ListItemText primary="Packages" />
           </ListItemButtonStyle>
         </ListItem>
-        <ListItem>{/* href="tel:+1613-790-4775" */}
-          <ListItemButtonStyle sx={{ textAlign: "center" }}>
+        <ListItem>
+          <ListItemButtonStyle
+            href="tel:+17809383001"
+            sx={{ textAlign: "center" }}
+          >
             <ListItemText primary="Call Us" />
           </ListItemButtonStyle>
         </ListItem>
@@ -113,18 +122,25 @@ const AppNavBar = (props) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <div href="/" style={{ color: "black", textDecoration: "none" }}>
-            Mustache Mobile Detailing
+              King's
+              <StaticImage
+                src="../images/crown.png"
+                width={25}
+                height={25}
+                alt="crown logo"
+              />
+              Autozone
             </div>
           </Typography>
 
           <Box
             sx={{ mr: 2, display: { xs: "none", md: "block" } }}
             style={{ marginLeft: "auto" }}
-          >{/* href="tel:+1613-790-4775" */}
+          >
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle>Call us</LinksStyle>
+            <LinksStyle href="tel:+17809383001">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {

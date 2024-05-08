@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Landingimage from '../images/LandingSection.png'
-
-
+import Landingimage from "../images/LandingSection.png";
 
 const Slogan = styled.div`
-  font-size: 25pt;
+  font-size: 23pt;
   font-family: system-ui;
   font-style: italic;
   color: black;
@@ -17,47 +15,46 @@ const Slogan = styled.div`
   }
 `;
 const Overlay = styled.div`
-    position: absolute;
-    top: 96%;
-    left: 25%;
-    width: 50%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: white;
-    text-align: center;
-    padding: 10px;
+  position: absolute;
+  top: 96%;
+  left: 25%;
+  width: 50%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
 
-    @media (max-width:730.1px) {
-        left: 20%;
-        width: 60%;
-        top: 95%;
-}
-    @media (min-width:1300px){
-        top: 97%;
-    }
-`
+  @media (max-width: 730.1px) {
+    left: 20%;
+    width: 60%;
+    top: 95%;
+  }
+  @media (min-width: 1300px) {
+    top: 97%;
+  }
+`;
 const SloganPortfolio = () => {
-    return (
-      <>
-        <div className="container text-center">
-          <Overlay className="shadow">
-            <Slogan>Ottawa, Ontario (45KM radius) </Slogan>
-          </Overlay>
-        </div>
-      </>
-    );
-  };
+  return (
+    <>
+      <div className="container text-center">
+        <Overlay className="shadow">
+          <Slogan>Edmonton, AB, Canada (50KM radius)</Slogan>
+        </Overlay>
+      </div>
+    </>
+  );
+};
 
-
-  const Masthead = styled.div`
+const Masthead = styled.div`
   position: relative;
   height: 60vh;
   margin-top: auto;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
       to bottom,
-      rgba(30, 63, 104, 0.2) 0%,
-      rgba(30, 63, 104, 0.6) 100%
+      rgba(20, 20, 20, 0) 0%,
+      rgba(129, 109, 0, 0) 100%
     ),
     url(${Landingimage});
   background-position: center;
@@ -76,12 +73,30 @@ const SloganPortfolio = () => {
     height: 35vh;
   }
 `;
+const Headliner = styled.div`
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-100%, -50%);
+  position: absolute;
+
+   @media (max-width: 730px) {
+    font-size: 16px;
+  }
+    
+  
+`
+
 const LandingSection = () => {
   return (
     <>
       <Masthead>
         <div className="container">
-            <SloganPortfolio />
+          <Headliner>"Supreme Shine Detailing: <br/> Where Cleanliness Meets Perfection"</Headliner>
+          <SloganPortfolio />
         </div>
       </Masthead>
     </>
