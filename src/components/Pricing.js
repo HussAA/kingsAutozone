@@ -32,6 +32,7 @@ const SectionDescription = styled.div`
   margin-right: 23px;
 `;
 const Card = styled.div`
+  position: relative;
   padding: 40px 25px 40px 25px;
   border-radius: 10px;
   border: 1px solid rgb(190, 190, 190);
@@ -39,6 +40,35 @@ const Card = styled.div`
   box-shadow: 0px 8px 20px #f4f4f4, -10px 5px 15px #f4f4f4,
     10px 5px 15px #f4f4f4;
 `;
+const CardB = styled.div`
+  background: #1C1C1C;
+  position: relative;
+  padding: 40px 25px 40px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px #f4f4f4, -10px 5px 15px #f4f4f4,
+    10px 5px 15px #f4f4f4;
+`;
+const TitleB = styled.div`
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: white;
+  i {
+    margin-right: 10px;
+  }
+`;
+const DescriptionB = styled.div`
+  font-size: 15px;
+  color: white;
+`;
+
+const PriceB = styled.div`
+  font-size: 35px;
+  display: inline-block;
+  padding-bottom: 20px;
+  color: white;
+`;
+
 const Title = styled.div`
   font-size: 18px;
   font-weight: 500;
@@ -70,6 +100,11 @@ const Bullet = styled.div`
   align-items: flex-start; /* Align items at the start of the flex container */
   padding-bottom: 7px;
 `;
+const BulletB = styled.div`
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the flex container */
+  padding-bottom: 7px;
+`;
 const ButtonStyle = styled(Button)`
   white-space: nowrap;
   color: black;
@@ -85,6 +120,18 @@ const Note = styled.div`
   font-size: 15px;
   color: gray;
 `;
+
+const Alert = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background: #c5a703;
+  font-weight: 650;
+  border-radius: 0px 0px 10px 10px;
+`;
 const Packages = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
   return (
@@ -98,7 +145,7 @@ const Packages = () => {
         tempor incididunt ut labore et dolore magna aliqua.
       </SectionDescription>
 
-      <div className="container-full px-3">
+      <div className="container-full px-5 px-md-3 ">
         <div className="row gutter gy-3">
           <div className="col-md-6 col-xl-3">
             <Card>
@@ -199,40 +246,41 @@ const Packages = () => {
             </Card>
           </div>
           <div className="col-md-6 col-xl-3">
-            <Card>
-              <Title>
+            <CardB>
+              <Alert>Best Deal</Alert>
+              <TitleB>
                 <i className="bi bi-circle-half" />
                 Premium Package
-              </Title>
-              <Description>
+              </TitleB>
+              <DescriptionB>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
-              </Description>
-              <Price>
+              </DescriptionB>
+              <PriceB>
                 $229 <Pricespan>/ Starting</Pricespan>
-              </Price>
-              <ItemArray
+              </PriceB>
+              <ItemArrayB
                 text={["Full interior deep clean - degrease & steam."]}
               />
-              <ItemArray text={["Interior protectant dressing"]} />
-              <ItemArray text={["All mats clean ( carpet & rubber)"]} />
-              <ItemArray text={["Carpet shampoo"]} />
-              <ItemArray text={["Seat shampoo / leather conditioning"]} />
-              <ItemArray text={["Headliner shampoo"]} />
-              <ItemArray text={["All Glass surface clean"]} />
-              <ItemArray text={["Deodrize"]} />
-              <ItemArray text={["Door jambs clean"]} />
-              <ItemArray text={["Exterior hand wash"]} />
-              <ItemArray text={["Exterior hand dry"]} />
-              <ItemArray text={["Tire and rim shine"]} />
-              <ItemArray text={["Exterior hand wax"]} />
-              <ItemArray text={["Engine bay shampoo"]} />
-              <ItemArray text={["Chrome Restoration"]} />
-              <ItemArrayX
+              <ItemArrayB text={["Interior protectant dressing"]} />
+              <ItemArrayB text={["All mats clean ( carpet & rubber)"]} />
+              <ItemArrayB text={["Carpet shampoo"]} />
+              <ItemArrayB text={["Seat shampoo / leather conditioning"]} />
+              <ItemArrayB text={["Headliner shampoo"]} />
+              <ItemArrayB text={["All Glass surface clean"]} />
+              <ItemArrayB text={["Deodrize"]} />
+              <ItemArrayB text={["Door jambs clean"]} />
+              <ItemArrayB text={["Exterior hand wash"]} />
+              <ItemArrayB text={["Exterior hand dry"]} />
+              <ItemArrayB text={["Tire and rim shine"]} />
+              <ItemArrayB text={["Exterior hand wax"]} />
+              <ItemArrayB text={["Engine bay shampoo"]} />
+              <ItemArrayB text={["Chrome Restoration"]} />
+              <ItemArrayXB
                 text={["Fabric protectant (water and spill-proof)"]}
               />
-              <ItemArrayX text={["Clay bar treatment"]} />
-              <ItemArrayX text={["One step polish"]} />
+              <ItemArrayXB text={["Clay bar treatment"]} />
+              <ItemArrayXB text={["One step polish"]} />
               <div className="text-center py-4">
                 <ButtonStyle
                   onClick={() => {
@@ -245,7 +293,7 @@ const Packages = () => {
               </div>
 
               <Note>$259 for 7 seater</Note>
-            </Card>
+            </CardB>
           </div>
           <div className="col-md-6 col-xl-3">
             <Card>
@@ -342,3 +390,43 @@ const ItemArrayX = ({ text }) => {
     </>
   );
 };
+const ItemArrayB = ({ text }) => {
+    return (
+      <>
+        {_.isArray(text) && (
+          <>
+            {text.map((v, i) => {
+              return (
+                <React.Fragment key={i}>
+                  <BulletB className="text-white">
+                    <CheckStyle className="bi bi-bookmark-x-fill" />
+                    {v}
+                  </BulletB>
+                </React.Fragment>
+              );
+            })}
+          </>
+        )}
+      </>
+    );
+  };
+  const ItemArrayXB = ({ text }) => {
+    return (
+      <>
+        {_.isArray(text) && (
+          <>
+            {text.map((v, i) => {
+              return (
+                <React.Fragment key={i}>
+                  <BulletB className="text-decoration-line-through text-white-50">
+                    <CheckStyle className="bi bi-bookmark-x-fill" />
+                    {v}
+                  </BulletB>
+                </React.Fragment>
+              );
+            })}
+          </>
+        )}
+      </>
+    );
+  };
