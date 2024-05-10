@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import Checkmark from "../images/checkmark.png";
-import { TawkContext } from "../providers"
+import { TawkContext } from "../providers";
 const PackageTitle = styled.div`
   font-size: 12pt;
   color: white;
@@ -34,18 +34,16 @@ const SectionDescription = styled.div`
 `;
 const PricingColumn = styled.div`
   background: white;
-  height: 550px;
-  margin-top: 30px;
   border-radius: 1rem;
-
   @media (max-width: 991.9px) {
     margin-bottom: 30px;
   }
 `;
 const PricingColumnCenter = styled.div`
+  border: 1px solid #394171;
   background: #16192c;
-  height: 610px;
   border-radius: 1rem;
+  position: relative;
 `;
 const PricingCard = styled.div`
   width: auto;
@@ -65,11 +63,13 @@ const PricingTitlesCenter = styled.div`
   color: #5e6aba;
 `;
 const PricingPopular = styled.button`
+  position: absolute;
   width: fit-content;
   padding: 5px 15px 5px 15px;
   border-radius: 25rem;
   color: white;
   border: 0 solid green;
+  right: 20px;
   background: #5d9310;
 
   &:hover {
@@ -99,11 +99,13 @@ const PricingCoverage = styled.div`
   font-size: 15px;
   color: #4f4f4f;
   min-height: 72px;
+  text-transform: capitalize;
 `;
 const PricingCoverageCenter = styled.div`
+  text-transform: capitalize;
   font-size: 15px;
   color: #e8e8e8;
-  min-height: 68px;
+  min-height: 72px;
 `;
 const PricingHr = styled.hr`
   color: lightgray;
@@ -117,14 +119,17 @@ const PricingFeatures = styled.div`
   font-size: 15px;
   color: black;
   margin-bottom: 15px;
-
+  text-transform: capitalize;
+  display: flex;
   @media screen and (min-width: 500px), (max-width: 768px) {
   }
 `;
 const PricingFeaturesCenter = styled.div`
+  text-transform: capitalize;
   font-size: 15px;
   color: white;
   margin-bottom: 15px;
+  display: flex;
 `;
 
 const PricingButton = styled.button`
@@ -148,7 +153,8 @@ const PricingButtonCenter = styled.button`
   color: black;
   border: 0;
   font-size: 14pt;
-  margin-top: 45px;
+  position: relative;
+  top: 284px;
   transition: 0.2s;
   &:hover {
     background: #3f4888;
@@ -183,13 +189,13 @@ const ListStyle2 = styled.div`
   color: #5e6aba;
 `;
 const Pricing = () => {
-  const { tawkMessenger } = React.useContext(TawkContext)
+  const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
       <PackageTitle id="Packages" className="text-center text-uppercase">
         packages
       </PackageTitle>
-      <SectionHeading>OUR PACKAGES</SectionHeading>
+      <SectionHeading>OUR CERAMIC COATING PACKAGES</SectionHeading>
       <SectionDescription>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
@@ -203,61 +209,44 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $90 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $499 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
                 <PricingCoverage className="col">
-                  Ideal for a basic detail of your vehicle.
+                  Ceramic Coating Without Paint Correction
                 </PricingCoverage>
               </div>
               <hr />
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Full vehicle vaccum
+                  Exterior hand wash
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Exterior hand wash + mats
+                  Exterior hand dry
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Interior & Windows wiped down
+                  Clay bar treatment
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Door jams pressure washed
+                  Paint decontamination
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Tires clean & Tire shine
+                  Ceramic coating (5 years)
                 </PricingFeatures>
-              </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  Odor Refreshener
-                  <br />
-                </PricingFeatures>
-              </div>
-              <div className="text-center mt-2">
-                <PricingButton
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  className="col"
-                >
-                  Book Now
-                </PricingButton>
               </div>
             </PricingCard>
           </PricingColumn>
@@ -274,12 +263,12 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $125 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $799 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
                 <PricingCoverageCenter className="col">
-                  Ideal for a thorough interior detailing experience.
+                  Ceramic Coating With Paint Correction.
                 </PricingCoverageCenter>
               </div>
               <PricingHr />
@@ -291,39 +280,15 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
-                  Rim & Wheel scrubbed
+                  <Check src={Checkmark} />2 stage paint correction - compound
+                  and polish
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Salt + mud/stain removal
+                  Ceramic coating (5 years)
                 </PricingFeaturesCenter>
-              </div>
-              <div className="row">
-                <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
-                  Carpet & seats shampooed
-                </PricingFeaturesCenter>
-              </div>
-              <div className="row">
-                <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
-                  Door jams scrubbed down
-                  <br />
-                  <br />
-                </PricingFeaturesCenter>
-              </div>
-              <div className="text-center">
-                <PricingButtonCenter
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  className="col"
-                >
-                  Book Now
-                </PricingButtonCenter>
               </div>
             </PricingCardCenter>
           </PricingColumnCenter>
@@ -335,13 +300,13 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $195 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $899 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
                 <PricingCoverage className="col">
-                  Ideal for a shiny exterior with added protection for your
-                  vehicle.
+                  Ceramic Coating With Paint Correction And Complete Interior
+                  Detail.
                 </PricingCoverage>
               </div>
               <hr />
@@ -354,42 +319,62 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Clay bar
+                  Complete interior deep clean - degrease, steam clean
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Leather / Fabric Protection
+                  Interior protectant dressing
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Ceramic wax
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+                  Carpet shampoo
                 </PricingFeatures>
               </div>
-
-              <div className="text-center">
-                <PricingButton
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  className="col"
-                >
-                  Book Now
-                </PricingButton>
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Cloth seat shampoo/ leather
+                </PricingFeatures>
+              </div>{" "}
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  seats condition
+                </PricingFeatures>
+              </div>{" "}
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Headliner shampoo
+                </PricingFeatures>
+              </div>{" "}
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  All glass surface clean (inside)
+                </PricingFeatures>
+              </div>{" "}
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Deodrize
+                </PricingFeatures>
+              </div>{" "}
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Door jambs clean
+                </PricingFeatures>
               </div>
+              <br />
             </PricingCard>
           </PricingColumn>
         </div>
       </div>
-      
     </>
   );
 };

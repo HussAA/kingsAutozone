@@ -128,7 +128,7 @@ const Alert = styled.div`
   margin-right: 30px;
   margin-bottom: 5px;
   padding: 10px;
-  background: #c5a703;
+  background: #D6B819;
   font-weight: 650;
   border-radius: 0px 0px 10px 10px;
 `;
@@ -399,7 +399,7 @@ const ItemArrayB = ({ text }) => {
               return (
                 <React.Fragment key={i}>
                   <BulletB className="text-white">
-                    <CheckStyle className="bi bi-bookmark-x-fill" />
+                    <CheckStyle className="bi bi-bookmark-check-fill" />
                     {v}
                   </BulletB>
                 </React.Fragment>
