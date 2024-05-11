@@ -23,6 +23,7 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
+      <meta name="description" content="Transform your vehicle with our premium detailing services." />
         <title>King's Autozone</title>
       </Helmet>
       <header>
@@ -30,7 +31,7 @@ const IndexPage = () => {
           <AppNavBar />
         </section>
       </header>
-      <body>
+      <main>
         <section>
           <LandingSection />
         </section>
@@ -73,11 +74,10 @@ const IndexPage = () => {
         <section>
           <ScrollArrow />
         </section>
-      </body>
+      </main>
     </>
   );
 };
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
