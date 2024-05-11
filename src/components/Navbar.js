@@ -14,8 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
-import { StaticImage } from "gatsby-plugin-image";
-
+import Crown from '../images/crown.png'
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -62,15 +61,8 @@ const AppNavBar = (props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        King's
-        <StaticImage
-          src="../images/crown.png"
-          width={25}
-          height={25}
-          alt="crown logo"
-        />
-        Autozone
+      <Typography variant="h6" sx={{ my: 2}}>
+        King's Autozone
       </Typography>
       <Divider />
       <List>
@@ -128,10 +120,10 @@ const AppNavBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
-            <div href="/" style={{ color: "black", textDecoration: "none" }}>
+            <div href="/" style={{ color: "black", textDecoration: "none", display:"flex" }}>
               King's
-              <StaticImage
-                src="../images/crown.png"
+              <img
+                src={Crown}
                 width={25}
                 height={25}
                 alt="crown logo"
@@ -141,8 +133,8 @@ const AppNavBar = (props) => {
           </Typography>
 
           <Box
-            sx={{ mr: 2, display: { xs: "none", md: "block" } }}
-            style={{ marginLeft: "auto" }}
+            sx={{ mr: 2, display: { xs: "none", md: "block" }, whiteSpace:"nowrap" }}
+            style={{ marginLeft: "auto"}}
           >
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#CPackages">Ceramic Coating </LinksStyle>
