@@ -41,7 +41,7 @@ const Card = styled.div`
     10px 5px 15px #f4f4f4;
 `;
 const CardB = styled.div`
-  background: #1C1C1C;
+  background: #1c1c1c;
   position: relative;
   padding: 40px 25px 40px 25px;
   border-radius: 10px;
@@ -128,7 +128,7 @@ const Alert = styled.div`
   margin-right: 30px;
   margin-bottom: 5px;
   padding: 10px;
-  background: #D6B819;
+  background: #d6b819;
   font-weight: 650;
   border-radius: 0px 0px 10px 10px;
 `;
@@ -136,13 +136,13 @@ const Packages = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
-      <SectionTitles id="Services" className="text-center text-uppercase">
+      <SectionTitles className="text-center text-uppercase">
         Packages
       </SectionTitles>
       <SectionHeading>our packages</SectionHeading>
       <SectionDescription>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Elevate your car's look and protection with our ceramic coating
+        packages, ensuring long-lasting shine and defense against the elements.
       </SectionDescription>
 
       <div className="container-full px-5 px-md-3 ">
@@ -391,42 +391,42 @@ const ItemArrayX = ({ text }) => {
   );
 };
 const ItemArrayB = ({ text }) => {
-    return (
-      <>
-        {_.isArray(text) && (
-          <>
-            {text.map((v, i) => {
-              return (
-                <React.Fragment key={i}>
-                  <BulletB className="text-white">
-                    <CheckStyle className="bi bi-bookmark-check-fill" />
-                    {v}
-                  </BulletB>
-                </React.Fragment>
-              );
-            })}
-          </>
-        )}
-      </>
-    );
-  };
-  const ItemArrayXB = ({ text }) => {
-    return (
-      <>
-        {_.isArray(text) && (
-          <>
-            {text.map((v, i) => {
-              return (
-                <React.Fragment key={i}>
-                  <BulletB className="text-decoration-line-through text-white-50">
-                    <CheckStyle className="bi bi-bookmark-x-fill" />
-                    {v}
-                  </BulletB>
-                </React.Fragment>
-              );
-            })}
-          </>
-        )}
-      </>
-    );
-  };
+  return (
+    <>
+      {_.isArray(text) && (
+        <>
+          {text.map((v, i) => {
+            return (
+              <React.Fragment key={i}>
+                <BulletB className="text-white">
+                  <CheckStyle className="bi bi-bookmark-check-fill" />
+                  {v}
+                </BulletB>
+              </React.Fragment>
+            );
+          })}
+        </>
+      )}
+    </>
+  );
+};
+const ItemArrayXB = ({ text }) => {
+  return (
+    <>
+      {_.isArray(text) && (
+        <>
+          {text.map((v, i) => {
+            return (
+              <React.Fragment key={i}>
+                <BulletB className="text-decoration-line-through text-white-50">
+                  <CheckStyle className="bi bi-bookmark-x-fill" />
+                  {v}
+                </BulletB>
+              </React.Fragment>
+            );
+          })}
+        </>
+      )}
+    </>
+  );
+};

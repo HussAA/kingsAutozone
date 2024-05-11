@@ -25,10 +25,9 @@ const Services = () => {
         <div className="section-title">
           <div className="section-h2">Services</div>
           <div className="section-p">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Transform your vehicle with our meticulous car detailing services,
+            offering Power polish, Wax, Odor Removal and more.
+            and ceramic coating applications for a pristine finish
           </div>
         </div>
         <div className="row">

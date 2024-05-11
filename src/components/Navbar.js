@@ -63,12 +63,14 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        King's<StaticImage
-                src="../images/crown.png"
-                width={25}
-                height={25}
-                alt="crown logo"
-              />Autozone
+        King's
+        <StaticImage
+          src="../images/crown.png"
+          width={25}
+          height={25}
+          alt="crown logo"
+        />
+        Autozone
       </Typography>
       <Divider />
       <List>
@@ -78,13 +80,18 @@ const AppNavBar = (props) => {
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
-          <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Services" />
+          <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Packages" />
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
-          <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Packages" />
+          <ListItemButtonStyle href="#CPackages" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Ceramic Coating" />
+          </ListItemButtonStyle>
+        </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Services" />
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
@@ -138,8 +145,9 @@ const AppNavBar = (props) => {
             style={{ marginLeft: "auto" }}
           >
             <LinksStyle href="#About">About</LinksStyle>
-            <LinksStyle href="#Services">Services</LinksStyle>
+            <LinksStyle href="#CPackages">Ceramic Coating </LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
+            <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="tel:+17809383001">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle

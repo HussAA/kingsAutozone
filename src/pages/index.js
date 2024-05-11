@@ -9,22 +9,20 @@ import Gallery from "../components/Gallery";
 import ScrollArrow from "../components/ScrollButton";
 import Pricing from "../components/package";
 import Footer from "../components/Footer";
-import AddOn from "../components/AddOn";
 import { Helmet } from "react-helmet";
 const PricingSection = styled.section`
-  background: #1A1A1A;
+  background: #1a1a1a;
   padding: 20px 10px 70px 10px;
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     padding-left: 30px;
     padding-right: 30px;
   }
-
 `;
 
 const IndexPage = () => {
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>King's Autozone</title>
       </Helmet>
       <header>
@@ -39,13 +37,16 @@ const IndexPage = () => {
         <section id="About" style={{ marginTop: "80px", paddingTop: "80px" }}>
           <AboutUs />
         </section>
-        <div
-          id="Packages"
-          style={{ marginTop: "100px", paddingTop: "120px" }}
-        >
-          <Packages />
-        </div>
-        <PricingSection style={{ marginTop: "100px", paddingTop: "120px" }}>
+        <section>
+          <div
+            id="Packages"
+            style={{ marginTop: "100px", paddingTop: "120px" }}
+          >
+            <Packages />
+          </div>
+        </section>
+
+        <PricingSection id="CPackages" style={{ marginTop: "100px", paddingTop: "120px" }}>
           <Pricing />
         </PricingSection>
         <section
@@ -67,7 +68,7 @@ const IndexPage = () => {
           <Gallery />
         </section>
         <section>
-          <Footer/>
+          <Footer />
         </section>
         <section>
           <ScrollArrow />

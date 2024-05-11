@@ -1,7 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 import Checkmark from "../images/checkmark.png";
-import { TawkContext } from "../providers";
 const PackageTitle = styled.div`
   font-size: 12pt;
   color: white;
@@ -35,8 +34,11 @@ const SectionDescription = styled.div`
 const PricingColumn = styled.div`
   background: white;
   border-radius: 1rem;
+  position: relative;
+  padding-bottom: 15px;
   @media (max-width: 991.9px) {
     margin-bottom: 30px;
+
   }
 `;
 const PricingColumnCenter = styled.div`
@@ -44,6 +46,11 @@ const PricingColumnCenter = styled.div`
   background: #16192c;
   border-radius: 1rem;
   position: relative;
+
+  @media (max-width: 991.1px) {
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+  }
 `;
 const PricingCard = styled.div`
   width: auto;
@@ -132,34 +139,34 @@ const PricingFeaturesCenter = styled.div`
   display: flex;
 `;
 
-const PricingButton = styled.button`
-  width: 80%;
-  height: 46px;
-  border-radius: 7px;
-  border: 0;
-  background: #16192c;
-  color: white;
-  font-size: 14pt;
-  transition: 0.2s;
-  &:hover {
-    background: #373f6c;
-  }
-`;
-const PricingButtonCenter = styled.button`
-  width: 80%;
-  height: 46px;
-  border-radius: 7px;
-  background: #5e6aba;
-  color: black;
-  border: 0;
-  font-size: 14pt;
-  position: relative;
-  top: 284px;
-  transition: 0.2s;
-  &:hover {
-    background: #3f4888;
-  }
-`;
+// const PricingButton = styled.button`
+//   width: 80%;
+//   height: 46px;
+//   border-radius: 7px;
+//   border: 0;
+//   background: #16192c;
+//   color: white;
+//   font-size: 14pt;
+//   transition: 0.2s;
+//   &:hover {
+//     background: #373f6c;
+//   }
+// `;
+// const PricingButtonCenter = styled.button`
+//   width: 80%;
+//   height: 46px;
+//   border-radius: 7px;
+//   background: #5e6aba;
+//   color: black;
+//   border: 0;
+//   font-size: 14pt;
+//   position: relative;
+//   top: 284px;
+//   transition: 0.2s;
+//   &:hover {
+//     background: #3f4888;
+//   }
+// `;
 const ArrowStyle = styled.i`
   width: 18px;
   height: 18px;
@@ -188,8 +195,23 @@ const ListStyle2 = styled.div`
   margin-bottom: 10px;
   color: #5e6aba;
 `;
+const Note = styled.div`
+  text-align: center;
+  font-size: 17px;
+  color: #6F6F6F;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @media (max-width: 991.1px) {
+    margin-top: 35px;
+  }
+
+`;
 const Pricing = () => {
-  const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
       <PackageTitle id="Packages" className="text-center text-uppercase">
@@ -197,8 +219,9 @@ const Pricing = () => {
       </PackageTitle>
       <SectionHeading>OUR CERAMIC COATING PACKAGES</SectionHeading>
       <SectionDescription>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Enhance your vehicle's shine and protection with our premium car
+        detailing packages, tailored to restore and maintain its pristine
+        condition inside and out.
       </SectionDescription>
       <div className="container-xl pricing-md-max">
         <div className="row">
@@ -249,6 +272,7 @@ const Pricing = () => {
                 </PricingFeatures>
               </div>
             </PricingCard>
+            <Note>$599 for 7 seater</Note>
           </PricingColumn>
 
           <PricingColumnCenter className="col-lg-4">
@@ -291,6 +315,7 @@ const Pricing = () => {
                 </PricingFeaturesCenter>
               </div>
             </PricingCardCenter>
+            <Note>$899 for 7 seater</Note>
           </PricingColumnCenter>
 
           <PricingColumn className="col-lg-4">
@@ -372,6 +397,7 @@ const Pricing = () => {
               </div>
               <br />
             </PricingCard>
+            <Note>$999 for 7 seater</Note>
           </PricingColumn>
         </div>
       </div>

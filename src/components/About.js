@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-
-
 const LeftHalf = styled.div`
   min-height: 410px;
   box-sizing: border-box;
@@ -57,7 +55,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #6E6E6E;
+  color: #6e6e6e;
   margin-bottom: 70px;
   margin-left: 23px;
   margin-right: 23px;
@@ -71,8 +69,8 @@ const AboutUs = () => {
       </SectionTitles>
       <SectionHeading>WHO WE ARE</SectionHeading>
       <SectionDescription>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Kings Autozone is a small auto detailing business providing the best 
+        quality services related to auto detailing.
       </SectionDescription>
       <div className="container-lg px-5">
         <div className="row">
@@ -85,9 +83,9 @@ const AboutUs = () => {
 
             <LeftText className="row">
               <div className="col">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries for previewing layouts and
-                visual mockups.
+                We have a variety of packages that will fit your needs
+                perfectly. We pride ourselves on using our professional-grade
+                products to deliver an exceptional look to your vehicle.
               </div>
             </LeftText>
           </LeftHalf>
