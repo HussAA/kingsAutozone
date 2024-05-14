@@ -40,7 +40,7 @@ const TermsIndex = () => {
     <TermsPage>
         <Link href="/"><i className="bi bi-arrow-left me-1"/>Home Page</Link>
       <Img>
-        <img src={Logo} width={300} height={150} />
+        <img alt="logo" src={Logo} width={300} height={150} />
       </Img>
       <Heading>Terms and Conditions</Heading>
 
