@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
+import _ from "lodash";
 
 const PackageTitle = styled.div`
-  font-size: 16pt;
-  color: white;
+  font-size: 18pt;
+  color: black;
   margin-top: 30px;
   margin-bottom: 50px;
 
@@ -13,48 +14,66 @@ const PackageTitle = styled.div`
 `;
 
 const Items = styled.div`
-  color: white;
+  color: black;
   font-size: 18px;
-
-  
+  text-transform: capitalize;
 `;
 const Logo = styled.i`
   margin-right: 10px;
-  color: yellow;
+  color: black;
 `;
+
+const Price = styled.span`
+  color: black;
+`;
+const AddonList = ({ texts, price }) => {
+  return (
+    <>
+      {_.isArray(texts) && (
+        <>
+          {texts.map((v, i) => {
+            return (
+              <React.Fragment key={i}>
+                <div className="col-6">
+                  <Items className="col-12">
+                    <Logo className="bi bi-bookmark-check" />
+                    {v}
+                  </Items>
+                </div>
+                <div className="col-6">
+                  <div>
+                    
+                    <Logo className="bi bi-arrow-right"/>
+                    <Price className="ms-3">{price}</Price>
+                  </div>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </>
+      )}
+    </>
+  );
+};
 const AddOn = () => {
   return (
     <>
-      <PackageTitle className="text-center">
-        Add-ons (20% off with Premium Package)
-      </PackageTitle>
+      <PackageTitle className="text-center">Add-on</PackageTitle>
 
       <div className="container">
         <div className="row">
-          <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus" />
-            Ozone Treatment
-          </Items>
-          <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus" />
-            Paint Sealant
-          </Items>
-          <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus" />
-            Engine Detailing
-          </Items>
-          <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus" />
-            Pet Hair Removal
-          </Items>
-          <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus" />
-            Leather Protection
-          </Items>
-          <Items className="col-12">
-            <Logo className="bi bi-bookmark-plus" />
-            Fabric Protection
-          </Items>
+          
+          
+          
+         
+          
+          <AddonList texts={["Pet Hair"]} price={["$50.00"]}/>
+          <AddonList texts={["Engine Shampoo"]} price={["$50.00 - $60.00"]}/>
+          <AddonList texts={["Toddler seat clean"]} price={["$20.00"]}/>
+          <AddonList texts={["Odor Removal"]} price={["$50.00"]}/>
+          <AddonList texts={["Seats & carpet Shampoo only"]} price={["$75.00 - $90.00"]}/>
+          <AddonList texts={["Headlight Restoration"]} price={["$99.00"]}/>
+          <AddonList texts={["Decal removal"]} price={["$20.00"]}/>
         </div>
       </div>
     </>

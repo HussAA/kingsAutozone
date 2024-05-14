@@ -26,46 +26,32 @@ const Services = () => {
           <div className="section-h2">Services</div>
           <div className="section-p">
             Transform your vehicle with our meticulous car detailing services,
-            offering Power polish, Wax, Odor Removal and more.
-            and ceramic coating applications for a pristine finish
+            offering interior & exterior detailing, power polish, and ceramic
+            coating applications for a pristine finish.
           </div>
         </div>
         <div className="row">
           <ServicesArray
-            title={["Decal Removal"]}
+            title={["Interior Detailing"]}
             text={[
-              "Decal removal involves the process of safely taking off stickers or decals from surfaces without causing damage.",
+              "Interior detailing involves thorough cleaning and restoring the interior surfaces of a vehicle, including the seats, carpets, dashboard, and other components.",
             ]}
             price={["$20"]}
           />
           <ServicesArray
-            title={["Headlight Restoration"]}
+            title={["Exterior Detailing"]}
             text={[
-              "Foggy or yellowed headlights can be restored to their original clarity and brightness, improving visibility and appearance.",
+              "Exterior detailing is thoroughly washing, polishing, and protecting a vehicle's exterior surfaces in order to maintain and improve its appearance.",
             ]}
             price={["$99"]}
           />
 
           <ServicesArray
-            title={["Odor Removal"]}
+            title={["Ceramic Coating"]}
             text={[
-              "Effective odor removal service to eliminate unwanted smells and refresh your space.",
+              "Ceramic coating is a durable, protective layer applied to surfaces like vehicles or ceramics to enhance gloss and protect against contaminants.",
             ]}
             price={["$50"]}
-          />
-          <ServicesArray
-            title={["Toddler Seat Clean"]}
-            text={[
-              "We provide a professional cleaning experience for child car seats, ensuring safety and hygiene for young passengers.",
-            ]}
-            price={["$20"]}
-          />
-          <ServicesArray
-            title={["Premium Wax"]}
-            text={[
-              "A high-quality, professional-grade wax with excellent shine and protection.",
-            ]}
-            price={["$$$"]}
           />
           <ServicesArray
             title={["Power Polish"]}
@@ -90,8 +76,8 @@ const ServicesArray = ({ text, title, price }) => {
           {text.map((v, i) => {
             return (
               <React.Fragment key={i}>
-                <div className="col-md-6 col-lg-4 p-3">
-                  <div className="icon">{price}</div>
+                <div className="col-md-6 col-lg-3 p-3">
+                  <div className="icon"><i className="bi bi-cart-plus-fill"/></div>
                   <Title className="mb-3 pb-2">{title}</Title>
                   <div className="">{v}</div>
                 </div>

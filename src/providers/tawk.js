@@ -19,8 +19,8 @@ const TawkContextProvider = ({ children }) => {
       }}
     >
       <TawkMessengerReact
-        propertyId="65ac2dd60ff6374032c2e356"
-        widgetId="1hkk963aa"
+        propertyId="66438ca607f59932ab3f7ce8"
+        widgetId="1htrtqr33"
         onLoad={onLoad}
         ref={tawkMessengerRef}
       />

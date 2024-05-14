@@ -14,7 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
-import Crown from '../images/crown.png'
+import Crown from '../images/Logo.jpg'
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -25,11 +25,11 @@ const ListItemButtonStyle = styled(ListItemButton)`
 
 const AppBarStyle = styled(AppBar)`
   height: 100px;
-  background: white;
+  background: #222021;
   position: fixed;
 `;
 const LinksStyle = styled.a`
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 16px;
@@ -88,7 +88,7 @@ const AppNavBar = (props) => {
         </ListItem>
         <ListItem>
           <ListItemButtonStyle
-            href="tel:+17809383001"
+            href="tel:+17807163338"
             sx={{ textAlign: "center" }}
           >
             <ListItemText primary="Call Us" />
@@ -97,6 +97,11 @@ const AppNavBar = (props) => {
         <ListItem>
           <ListItemButtonStyle href="#Gallery" sx={{ textAlign: "center" }}>
             <ListItemText primary="Gallery" />
+          </ListItemButtonStyle>
+        </ListItem>
+        <ListItem>
+          <ListItemButtonStyle href="/terms" sx={{ textAlign: "center" }}>
+            <ListItemText primary="Terms & Conditions" />
           </ListItemButtonStyle>
         </ListItem>
       </List>
@@ -111,24 +116,23 @@ const AppNavBar = (props) => {
       <AppBarStyle>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
           <IconButton
-            color="dark"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: "none" } }}
+            sx={{ mr: 2,color:"white" ,display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
             <div href="/" style={{ color: "black", textDecoration: "none", display:"flex" }}>
-              King's
+              
               <img
                 src={Crown}
-                width={25}
-                height={25}
+                width={180}
+                height={100}
                 alt="crown logo"
               />
-              Autozone
+             
             </div>
           </Typography>
 
@@ -140,7 +144,7 @@ const AppNavBar = (props) => {
             <LinksStyle href="#CPackages">Ceramic Coating </LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
-            <LinksStyle href="tel:+17809383001">Call us</LinksStyle>
+            <LinksStyle href="tel:+17807163338">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {

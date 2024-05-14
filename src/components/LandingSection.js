@@ -3,15 +3,17 @@ import styled from "@emotion/styled";
 import Landingimage from "../images/LandingSection.png";
 
 const Slogan = styled.div`
-  font-size: 23pt;
+  font-size: 20pt;
   font-family: system-ui;
   font-style: italic;
   color: black;
   @media screen and (max-width: 767px) {
-    font-size: 17pt;
+    font-size: 15pt;
+    font-weight: 500;
   }
   @media screen and (max-width: 521px) {
     font-size: 13pt;
+    font-weight: 500;
   }
 `;
 const Overlay = styled.div`
@@ -39,7 +41,8 @@ const SloganPortfolio = () => {
     <>
       <div className="container text-center">
         <Overlay className="shadow">
-          <Slogan>Edmonton, AB, Canada (50KM radius)</Slogan>
+          <Slogan>125 9704 39 Ave NW, Edmonton, AB T6E 6M7 <br/>Call: 780 716 3338</Slogan>
+          
         </Overlay>
       </div>
     </>

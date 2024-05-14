@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import _ from "lodash";
 import { Button } from "@mui/material";
 import { TawkContext } from "../providers";
+import AddOn from "./AddOn";
 const SectionTitles = styled.div`
   font-size: 12pt;
   color: #646363;
@@ -343,6 +344,7 @@ const Packages = () => {
             </Card>
           </div>
         </div>
+        <AddOn/>
       </div>
     </>
   );
