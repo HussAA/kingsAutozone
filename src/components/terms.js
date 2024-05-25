@@ -56,11 +56,8 @@ const TermsIndex = () => {
       <Paragraph>
         <i class="bi bi-star-half me-2" />
         Kings Autozone will not accept any liability for any loss or damage to
-        any personal any missed-out spots to be done again. property including
-        the vehicle being serviced or any belongings contained inside of the
-        vehicle. Kings Autozone will not accept any liability for any loss or
-        damage to any personal property, we do not take responsibility for any
-        belongings contained inside the vehicle.
+        any personal property, we do not take responsibility for any belongings
+        contained inside the vehicle.
       </Paragraph>
       <Paragraph>
         <i class="bi bi-star-half me-2" />

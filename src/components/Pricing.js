@@ -300,7 +300,7 @@ const Packages = () => {
                 Deluxe Package
               </Title>
               <Description>
-              Ideal for a pristine vehicle shine inside and out.
+              Ideal for a complete restoration and a thorough exterior and interior detail.
               </Description>
               <Price>
                 $269 <Pricespan>/ Starting</Pricespan>
