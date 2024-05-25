@@ -61,7 +61,7 @@ const Footer = () => {
             <Icon className="bi bi-instagram" />
           </a>
           <a
-            href="https://www.google.com/search?kgmid=/g/11ss81hr9v&hl=en-CA&q=Kings+Autozone-+Auto+Detailing+%26+Ceramic+coating&kgs=719a2fc092ba5794&shndl=30&shem=ssic&source=sh/x/loc/osrp/m5/1#lrd=0x53a01f28a8a42e49:0xd5f3529b268fdf97,1"
+            href="https://g.page/r/CZffjyabUvPVEBM/review"
             target="_blank"
             rel="noreferrer"
             aria-label="google"
