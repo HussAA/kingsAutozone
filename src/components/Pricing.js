@@ -155,8 +155,7 @@ const Packages = () => {
                 Basic Package
               </Title>
               <Description>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
+              Ideal for a basic interior detail of your vehicle.
               </Description>
               <Price>
                 $149 <Pricespan>/ Starting</Pricespan>
@@ -204,8 +203,7 @@ const Packages = () => {
                 Standard Package
               </Title>
               <Description>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
+                Ideal for a Standard detail of your vehicle including exterior.
               </Description>
               <Price>
                 $199 <Pricespan>/ Starting</Pricespan>
@@ -254,8 +252,7 @@ const Packages = () => {
                 Premium Package
               </TitleB>
               <DescriptionB>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
+              Ideal for a shiny exterior with added protection for your vehicle.
               </DescriptionB>
               <PriceB>
                 $229 <Pricespan>/ Starting</Pricespan>
@@ -303,8 +300,7 @@ const Packages = () => {
                 Deluxe Package
               </Title>
               <Description>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
+              Ideal for a pristine vehicle shine inside and out.
               </Description>
               <Price>
                 $269 <Pricespan>/ Starting</Pricespan>
@@ -344,7 +340,7 @@ const Packages = () => {
             </Card>
           </div>
         </div>
-        <AddOn/>
+        <AddOn />
       </div>
     </>
   );

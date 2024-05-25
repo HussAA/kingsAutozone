@@ -27,18 +27,21 @@ const Img = styled.div`
   text-align: center;
 `;
 const Link = styled.a`
-    text-decoration: none;
-    font-size: 17px;
-    color: gold;
-    transition: 0.2s;
-    :hover{
-        color: darkgoldenrod;
-    }
-`
+  text-decoration: none;
+  font-size: 17px;
+  color: gold;
+  transition: 0.2s;
+  :hover {
+    color: darkgoldenrod;
+  }
+`;
 const TermsIndex = () => {
   return (
     <TermsPage>
-        <Link href="/"><i className="bi bi-arrow-left me-1"/>Home Page</Link>
+      <Link href="/">
+        <i className="bi bi-arrow-left me-1" />
+        Home Page
+      </Link>
       <Img>
         <img alt="logo" src={Logo} width={300} height={150} />
       </Img>
@@ -55,7 +58,9 @@ const TermsIndex = () => {
         Kings Autozone will not accept any liability for any loss or damage to
         any personal any missed-out spots to be done again. property including
         the vehicle being serviced or any belongings contained inside of the
-        vehicle.
+        vehicle. Kings Autozone will not accept any liability for any loss or
+        damage to any personal property, we do not take responsibility for any
+        belongings contained inside the vehicle.
       </Paragraph>
       <Paragraph>
         <i class="bi bi-star-half me-2" />
@@ -77,9 +82,8 @@ const TermsIndex = () => {
       <Paragraph>
         <i class="bi bi-star-half me-2" />
         Please inspect your vehicle properly before leaving the shop. Let us
-        know if you want
+        know if you want any missed out spots to be done again.
       </Paragraph>
-      
     </TermsPage>
   );
 };

@@ -61,7 +61,7 @@ const Footer = () => {
             <Icon className="bi bi-instagram" />
           </a>
           <a
-            href="https://www.google.com/search?q=kings+autozone&sca_esv=4a15b0de3d8e6aa3&rlz=1C1CHBF_enCA931CA931&sxsrf=ADLYWIL9htqEBbmwf4wAYyOG7RwrGSfHzQ%3A1715151286619&ei=tiE7ZqW9JbSjptQPgtSZgAo&ved=0ahUKEwil8LK5vP2FAxW0kYkEHQJqBqAQ4dUDCBA&uact=5&oq=kingsautozone&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWtpbmdzYXV0b3pvbmUyDhAuGIAEGLADGMcBGK8BMgkQABiwAxgIGB4yCRAAGLADGAgYHjIJEAAYsAMYCBgeMgkQABiwAxgIGB4yCRAAGLADGAgYHjIJEAAYsAMYCBgeMgkQABiwAxgIGB4yCRAAGLADGAgYHjIJEAAYsAMYCBgeSMMEUABYAHAAeACQAQCYAUygAUyqAQExuAEDyAEAmAIBoAJPmAMA4gMFEgExIECIBgGQBgqSBwExoAfkCA&sclient=gws-wiz-serp#lrd=0x53a01f28a8a42e49:0xd5f3529b268fdf97,1,,,,"
+            href="https://www.google.com/search?kgmid=/g/11ss81hr9v&hl=en-CA&q=Kings+Autozone-+Auto+Detailing+%26+Ceramic+coating&kgs=719a2fc092ba5794&shndl=30&shem=ssic&source=sh/x/loc/osrp/m5/1#lrd=0x53a01f28a8a42e49:0xd5f3529b268fdf97,1"
             target="_blank"
             rel="noreferrer"
             aria-label="google"
