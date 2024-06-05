@@ -10,6 +10,8 @@ import ScrollArrow from "../components/ScrollButton";
 import Pricing from "../components/package";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import AddOn from "../components/AddOn";
+
 const PricingSection = styled.section`
   background: #1a1a1a;
   padding: 20px 10px 70px 10px;
@@ -44,6 +46,7 @@ const IndexPage = () => {
             style={{ marginTop: "100px", paddingTop: "120px" }}
           >
             <Packages />
+            <AddOn />
           </div>
         </section>
 

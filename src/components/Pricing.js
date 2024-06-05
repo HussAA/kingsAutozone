@@ -340,7 +340,6 @@ const Packages = () => {
             </Card>
           </div>
         </div>
-        <AddOn />
       </div>
     </>
   );
