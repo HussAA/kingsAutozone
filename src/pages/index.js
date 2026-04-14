@@ -25,6 +25,7 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
+      
       <meta name="description" content="Transform your vehicle with our premium detailing services." />
         <title>King's Autozone</title>
       </Helmet>

@@ -4,6 +4,7 @@ import _ from "lodash";
 import { Button } from "@mui/material";
 import { TawkContext } from "../providers";
 import AddOn from "./AddOn";
+
 const SectionTitles = styled.div`
   font-size: 12pt;
   color: #646363;
@@ -40,6 +41,9 @@ const Card = styled.div`
   border-color: #e0bd01;
   box-shadow: 0px 8px 20px #f4f4f4, -10px 5px 15px #f4f4f4,
     10px 5px 15px #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 const CardB = styled.div`
   background: #1c1c1c;
@@ -48,6 +52,15 @@ const CardB = styled.div`
   border-radius: 10px;
   box-shadow: 0px 8px 20px #f4f4f4, -10px 5px 15px #f4f4f4,
     10px 5px 15px #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+const ItemsContainer = styled.div`
+  flex: 1;
+`;
+const CardFooter = styled.div`
+  margin-top: auto;
 `;
 const TitleB = styled.div`
   font-size: 18px;
@@ -62,14 +75,12 @@ const DescriptionB = styled.div`
   font-size: 15px;
   color: white;
 `;
-
 const PriceB = styled.div`
   font-size: 35px;
   display: inline-block;
   padding-bottom: 20px;
   color: white;
 `;
-
 const Title = styled.div`
   font-size: 18px;
   font-weight: 500;
@@ -81,7 +92,6 @@ const Title = styled.div`
 const Description = styled.div`
   font-size: 15px;
 `;
-
 const Price = styled.div`
   font-size: 35px;
   display: inline-block;
@@ -98,12 +108,12 @@ const CheckStyle = styled.i`
 `;
 const Bullet = styled.div`
   display: flex;
-  align-items: flex-start; /* Align items at the start of the flex container */
+  align-items: flex-start;
   padding-bottom: 7px;
 `;
 const BulletB = styled.div`
   display: flex;
-  align-items: flex-start; /* Align items at the start of the flex container */
+  align-items: flex-start;
   padding-bottom: 7px;
 `;
 const ButtonStyle = styled(Button)`
@@ -121,7 +131,6 @@ const Note = styled.div`
   font-size: 15px;
   color: gray;
 `;
-
 const Alert = styled.div`
   position: absolute;
   top: 0;
@@ -133,6 +142,7 @@ const Alert = styled.div`
   font-weight: 650;
   border-radius: 0px 0px 10px 10px;
 `;
+
 const Packages = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
   return (
@@ -146,199 +156,175 @@ const Packages = () => {
         packages, ensuring long-lasting shine and defense against the elements.
       </SectionDescription>
 
-      <div className="container-full px-5 px-md-3 ">
-        <div className="row gutter gy-3">
-          <div className="col-md-6 col-xl-3">
+      <div className="container-full px-5 px-md-3">
+        <div className="row gutter gy-3 align-items-stretch">
+
+          {/* Card 1 */}
+          <div className="col-md-6 col-xl-3 d-flex">
             <Card>
               <Title>
                 <i className="bi bi-circle-half" />
-                Basic Package
+                Knight's Noble Interior
               </Title>
               <Description>
-              Ideal for a basic interior detail of your vehicle.
+                A distinguished interior-only service, meticulously designed to
+                restore your vehicle's cabin.
               </Description>
               <Price>
                 $149 <Pricespan>/ Starting</Pricespan>
               </Price>
-              <ItemArray
-                text={["Full interior deep clean - degrease and steam."]}
-              />
-              <ItemArray text={["Interior protectant dressing"]} />
-              <ItemArray text={["All mats clean ( carpet and rubber)"]} />
-              <ItemArray text={["Carpet shampoo"]} />
-              <ItemArray text={["Seat shampoo / leather conditioning"]} />
-              <ItemArray text={["Headliner shampoo"]} />
-              <ItemArray text={["All Glass surface clean"]} />
-              <ItemArray text={["Deodrize"]} />
-              <ItemArray text={["Door jambs clean"]} />
-              <ItemArrayX text={["Exterior hand wash"]} />
-              <ItemArrayX text={["Exterior hand dry"]} />
-              <ItemArrayX text={["Tire and rim shine"]} />
-              <ItemArrayX text={["Exterior hand wax"]} />
-              <ItemArrayX text={["Engine bay shampoo"]} />
-              <ItemArrayX text={["Chrome Restoration"]} />
-              <ItemArrayX
-                text={["Fabric protectant (water and spill-proof)"]}
-              />
-              <ItemArrayX text={["Clay bar treatment"]} />
-              <ItemArrayX text={["One step polish"]} />
-              <div className="text-center py-4">
-                <ButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </ButtonStyle>
-              </div>
-
-              <Note>$179 for 7 seater</Note>
+              <ItemsContainer>
+                <ItemArray text={["Full interior deep clean - degrease and steam."]} />
+                <ItemArray text={["Full interior steam clean & sanitizing"]} />
+                <ItemArray text={["Interior surface protectant"]} />
+                <ItemArray text={["Mat cleaning (carpet & rubber)"]} />
+                <ItemArray text={["Carpet shampoo & extraction"]} />
+                <ItemArray text={["Cloth seat shampoo / leather seats conditioning"]} />
+                <ItemArray text={["Headliner spot cleaning"]} />
+                <ItemArray text={["Interior glass cleaned"]} />
+                <ItemArray text={["Premium deodorizer"]} />
+                <ItemArray text={["Door jambs cleaned"]} />
+                <ItemArray text={["Trunk & spare tire area cleaned"]} />
+              </ItemsContainer>
+              <CardFooter>
+                <div className="text-center py-4">
+                  <ButtonStyle onClick={() => tawkMessenger.toggle()} variant="contained">
+                    Book Now
+                  </ButtonStyle>
+                </div>
+                <Note>$179 (7 passenger SUV/ Mini Van/ Pickup Truck)</Note>
+              </CardFooter>
             </Card>
           </div>
-          <div className="col-md-6 col-xl-3">
+
+          {/* Card 2 */}
+          <div className="col-md-6 col-xl-3 d-flex">
             <Card>
               <Title>
                 <i className="bi bi-circle-half" />
-                Standard Package
+                Prince's Prestige Wash
               </Title>
               <Description>
-                Ideal for a Standard detail of your vehicle including exterior.
+                An exceptional service crafted to elevate both interior and exterior of your vehicle.
               </Description>
               <Price>
                 $199 <Pricespan>/ Starting</Pricespan>
               </Price>
-              <ItemArray
-                text={["Full interior deep clean - degrease and steam."]}
-              />
-              <ItemArray text={["Interior protectant dressing"]} />
-              <ItemArray text={["All mats clean ( carpet and rubber)"]} />
-              <ItemArray text={["Carpet shampoo"]} />
-              <ItemArray text={["Seat shampoo / leather conditioning"]} />
-              <ItemArray text={["Headliner shampoo"]} />
-              <ItemArray text={["All Glass surface clean"]} />
-              <ItemArray text={["Deodrize"]} />
-              <ItemArray text={["Door jambs clean"]} />
-              <ItemArray text={["Exterior hand wash"]} />
-              <ItemArray text={["Exterior hand dry"]} />
-              <ItemArray text={["Tire and rim shine"]} />
-              <ItemArrayX text={["Exterior hand wax"]} />
-              <ItemArrayX text={["Engine bay shampoo"]} />
-              <ItemArrayX text={["Chrome Restoration"]} />
-              <ItemArrayX
-                text={["Fabric protectant (water and spill-proof)"]}
-              />
-              <ItemArrayX text={["Clay bar treatment"]} />
-              <ItemArrayX text={["One step polish"]} />
-              <div className="text-center py-4">
-                <ButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </ButtonStyle>
-              </div>
-
-              <Note>$229 for 7 seater</Note>
+              <ItemsContainer>
+                <ItemArray text={["Full interior deep clean - degrease and steam."]} />
+                <ItemArray text={["Full interior steam clean & sanitizing"]} />
+                <ItemArray text={["Interior surface protectant"]} />
+                <ItemArray text={["Mat cleaning (carpet & rubber)"]} />
+                <ItemArray text={["Carpet shampoo & extraction"]} />
+                <ItemArray text={["Cloth seat shampoo / leather seats conditioning"]} />
+                <ItemArray text={["Headliner spot cleaning"]} />
+                <ItemArray text={["Interior glass cleaned"]} />
+                <ItemArray text={["Premium deodorizer"]} />
+                <ItemArray text={["Door jambs cleaned"]} />
+                <ItemArray text={["Trunk & spare tire area cleaned Exterior"]} />
+                <ItemArray text={["Hand wash"]} />
+                <ItemArray text={["Hand dry"]} />
+                <ItemArray text={["Tire and rim shine"]} />
+              </ItemsContainer>
+              <CardFooter>
+                <div className="text-center py-4">
+                  <ButtonStyle onClick={() => tawkMessenger.toggle()} variant="contained">
+                    Book Now
+                  </ButtonStyle>
+                </div>
+                <Note>$249 (7 passenger SUV/ Mini Van/ Pickup Truck)</Note>
+              </CardFooter>
             </Card>
           </div>
-          <div className="col-md-6 col-xl-3">
+
+          {/* Card 3 - Dark / Best Deal */}
+          <div className="col-md-6 col-xl-3 d-flex">
             <CardB>
               <Alert>Best Deal</Alert>
               <TitleB>
                 <i className="bi bi-circle-half" />
-                Premium Package
+                King's Kingdom Cleaning
               </TitleB>
               <DescriptionB>
-              Ideal for a shiny exterior with added protection for your vehicle.
+                the ultimate full interior and exterior detail, crowned with a deep engine shampoo for a truly majestic clean.
               </DescriptionB>
               <PriceB>
                 $229 <Pricespan>/ Starting</Pricespan>
               </PriceB>
-              <ItemArrayB
-                text={["Full interior deep clean - degrease & steam."]}
-              />
-              <ItemArrayB text={["Interior protectant dressing"]} />
-              <ItemArrayB text={["All mats clean ( carpet & rubber)"]} />
-              <ItemArrayB text={["Carpet shampoo"]} />
-              <ItemArrayB text={["Seat shampoo / leather conditioning"]} />
-              <ItemArrayB text={["Headliner shampoo"]} />
-              <ItemArrayB text={["All Glass surface clean"]} />
-              <ItemArrayB text={["Deodrize"]} />
-              <ItemArrayB text={["Door jambs clean"]} />
-              <ItemArrayB text={["Exterior hand wash"]} />
-              <ItemArrayB text={["Exterior hand dry"]} />
-              <ItemArrayB text={["Tire and rim shine"]} />
-              <ItemArrayB text={["Exterior hand wax"]} />
-              <ItemArrayB text={["Engine bay shampoo"]} />
-              <ItemArrayB text={["Chrome Restoration"]} />
-              <ItemArrayXB
-                text={["Fabric protectant (water and spill-proof)"]}
-              />
-              <ItemArrayXB text={["Clay bar treatment"]} />
-              <ItemArrayXB text={["One step polish"]} />
-              <div className="text-center py-4">
-                <ButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </ButtonStyle>
-              </div>
-
-              <Note>$259 for 7 seater</Note>
+              <ItemsContainer>
+                <ItemArrayB text={["Full interior steam clean & sanitizing"]} />
+                <ItemArrayB text={["Interior surface protectant"]} />
+                <ItemArrayB text={["Mat cleaning (carpet & rubber)"]} />
+                <ItemArrayB text={["Carpet shampoo & extraction"]} />
+                <ItemArrayB text={["Cloth seat shampoo / leather seats conditioning"]} />
+                <ItemArrayB text={["Headliner spot cleaning"]} />
+                <ItemArrayB text={["Interior glass cleaned"]} />
+                <ItemArrayB text={["Premium deodorizer"]} />
+                <ItemArrayB text={["Door jambs cleaned"]} />
+                <ItemArrayB text={["Trunk & spare tire area cleaned"]} />
+                <ItemArrayB text={["Hand wash"]} />
+                <ItemArrayB text={["Hand dry"]} />
+                <ItemArrayB text={["Tire and rim shine"]} />
+                <ItemArrayB text={["Ceramic hand wax"]} />
+                <ItemArrayB text={["Engine bay shampoo"]} />
+                <ItemArrayB text={["Chrome Restoration"]} />
+              </ItemsContainer>
+              <CardFooter>
+                <div className="text-center py-4">
+                  <ButtonStyle onClick={() => tawkMessenger.toggle()} variant="contained">
+                    Book Now
+                  </ButtonStyle>
+                </div>
+                <Note>$279 (7 passenger SUV/ Mini Van/ Pickup Truck)</Note>
+              </CardFooter>
             </CardB>
           </div>
-          <div className="col-md-6 col-xl-3">
+
+          {/* Card 4 */}
+          <div className="col-md-6 col-xl-3 d-flex">
             <Card>
               <Title>
                 <i className="bi bi-circle-half" />
-                Deluxe Package
+                Emperor's Elite Enhancement
               </Title>
               <Description>
-              Ideal for a complete restoration and a thorough exterior and interior detail.
+                Full interior and exterior detailing, engine shampoo, paint decontamination, clay bar treatment, and polish for the ultimate royal finish.
               </Description>
               <Price>
-                $269 <Pricespan>/ Starting</Pricespan>
+                $299 <Pricespan>/ Starting</Pricespan>
               </Price>
-              <ItemArray
-                text={["Full interior deep clean - degrease and steam."]}
-              />
-              <ItemArray text={["Interior protectant dressing"]} />
-              <ItemArray text={["All mats clean ( carpet and rubber)"]} />
-              <ItemArray text={["Carpet shampoo"]} />
-              <ItemArray text={["Seat shampoo / leather conditioning"]} />
-              <ItemArray text={["Headliner shampoo"]} />
-              <ItemArray text={["All Glass surface clean"]} />
-              <ItemArray text={["Deodrize"]} />
-              <ItemArray text={["Door jambs clean"]} />
-              <ItemArray text={["Exterior hand wash"]} />
-              <ItemArray text={["Exterior hand dry"]} />
-              <ItemArray text={["Tire and rim shine"]} />
-              <ItemArray text={["Exterior hand wax"]} />
-              <ItemArray text={["Engine bay shampoo"]} />
-              <ItemArray text={["Chrome Restoration"]} />
-              <ItemArray text={["Fabric protectant (water and spill-proof)"]} />
-              <ItemArray text={["Clay bar treatment"]} />
-              <ItemArray text={["One step polish"]} />
-              <div className="text-center py-4">
-                <ButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle();
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </ButtonStyle>
-              </div>
-
-              <Note>$299 for 7 seater</Note>
+              <ItemsContainer>
+                <ItemArray text={["Full interior steam clean & sanitizing"]} />
+                <ItemArray text={["Interior surface protectant"]} />
+                <ItemArray text={["Mat cleaning (carpet & rubber)"]} />
+                <ItemArray text={["Carpet shampoo & extraction"]} />
+                <ItemArray text={["Cloth seat shampoo / leather seats conditioning"]} />
+                <ItemArray text={["Headliner spot cleaning"]} />
+                <ItemArray text={["Interior glass cleaned"]} />
+                <ItemArray text={["Premium deodorizer"]} />
+                <ItemArray text={["Door jambs cleaned"]} />
+                <ItemArray text={["Trunk & spare tire area cleaned Exterior"]} />
+                <ItemArray text={["Hand wash"]} />
+                <ItemArray text={["Hand dry"]} />
+                <ItemArray text={["Ceramic hand wax"]} />
+                <ItemArray text={["Engine bay shampoo"]} />
+                <ItemArray text={["Chrome Restoration"]} />
+                <ItemArray text={["Paint decontamination wash"]} />
+                <ItemArray text={["Clay bar treatment"]} />
+                <ItemArray text={["One step polish"]} />
+                <ItemArray text={["Ceramic wax"]} />
+              </ItemsContainer>
+              <CardFooter>
+                <div className="text-center py-4">
+                  <ButtonStyle onClick={() => tawkMessenger.toggle()} variant="contained">
+                    Book Now
+                  </ButtonStyle>
+                </div>
+                <Note>$379 (7 passenger SUV/ Mini Van/ Pickup Truck)</Note>
+              </CardFooter>
             </Card>
           </div>
+
         </div>
       </div>
     </>
@@ -352,76 +338,71 @@ const ItemArray = ({ text }) => {
     <>
       {_.isArray(text) && (
         <>
-          {text.map((v, i) => {
-            return (
-              <React.Fragment key={i}>
-                <Bullet>
-                  <CheckStyle className="bi bi-bookmark-check-fill" />
-                  {v}
-                </Bullet>
-              </React.Fragment>
-            );
-          })}
+          {text.map((v, i) => (
+            <React.Fragment key={i}>
+              <Bullet>
+                <CheckStyle className="bi bi-bookmark-check-fill" />
+                {v}
+              </Bullet>
+            </React.Fragment>
+          ))}
         </>
       )}
     </>
   );
 };
+
 const ItemArrayX = ({ text }) => {
   return (
     <>
       {_.isArray(text) && (
         <>
-          {text.map((v, i) => {
-            return (
-              <React.Fragment key={i}>
-                <Bullet className="text-decoration-line-through text-black-50">
-                  <CheckStyle className="bi bi-bookmark-x-fill" />
-                  {v}
-                </Bullet>
-              </React.Fragment>
-            );
-          })}
+          {text.map((v, i) => (
+            <React.Fragment key={i}>
+              <Bullet className="text-decoration-line-through text-black-50">
+                <CheckStyle className="bi bi-bookmark-x-fill" />
+                {v}
+              </Bullet>
+            </React.Fragment>
+          ))}
         </>
       )}
     </>
   );
 };
+
 const ItemArrayB = ({ text }) => {
   return (
     <>
       {_.isArray(text) && (
         <>
-          {text.map((v, i) => {
-            return (
-              <React.Fragment key={i}>
-                <BulletB className="text-white">
-                  <CheckStyle className="bi bi-bookmark-check-fill" />
-                  {v}
-                </BulletB>
-              </React.Fragment>
-            );
-          })}
+          {text.map((v, i) => (
+            <React.Fragment key={i}>
+              <BulletB className="text-white">
+                <CheckStyle className="bi bi-bookmark-check-fill" />
+                {v}
+              </BulletB>
+            </React.Fragment>
+          ))}
         </>
       )}
     </>
   );
 };
+
 const ItemArrayXB = ({ text }) => {
   return (
     <>
       {_.isArray(text) && (
         <>
-          {text.map((v, i) => {
-            return (
-              <React.Fragment key={i}>
-                <BulletB className="text-decoration-line-through text-white-50">
-                  <CheckStyle className="bi bi-bookmark-x-fill" />
-                  {v}
-                </BulletB>
-              </React.Fragment>
-            );
-          })}
+          {text.map((v, i) => (
+            <React.Fragment key={i}>
+              <BulletB className="text-decoration-line-through text-white-50">
+                <CheckStyle className="bi bi-bookmark-x-fill" />
+                {v}
+              </BulletB>
+            </React.Fragment>
+          ))}
         </>
       )}
     </>

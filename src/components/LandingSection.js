@@ -98,7 +98,7 @@ const LandingSection = () => {
     <>
       <Masthead>
         <div className="container">
-          <Headliner>"Supreme Shine Detailing: <br/> Where Cleanliness Meets Perfection"</Headliner>
+          <Headliner>"King's Autozone: <br/> Where Cleanliness Meets Perfection"</Headliner>
           <SloganPortfolio />
         </div>
       </Masthead>

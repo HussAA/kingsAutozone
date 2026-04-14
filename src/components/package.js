@@ -11,6 +11,10 @@ const PackageTitle = styled.div`
     margin-bottom: 20px;
   }
 `;
+const BoldText = styled.span`
+  font-weight: 600;
+  margin-left: auto; /* pushes price to the right */
+`;
 const SectionHeading = styled.div`
   font-size: 35pt;
   color: white;
@@ -24,7 +28,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #979797;
+  color: #d6c801;
   margin-bottom: 40px;
   margin-left: 23px;
   margin-right: 23px;
@@ -35,10 +39,9 @@ const PricingColumn = styled.div`
   background: white;
   border-radius: 1rem;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 5%;
   @media (max-width: 991.9px) {
     margin-bottom: 30px;
-
   }
 `;
 const PricingColumnCenter = styled.div`
@@ -198,7 +201,7 @@ const ListStyle2 = styled.div`
 const Note = styled.div`
   text-align: center;
   font-size: 17px;
-  color: #6F6F6F;
+  color: #6f6f6f;
   padding-bottom: 10px;
   padding-top: 20px;
   position: absolute;
@@ -209,7 +212,6 @@ const Note = styled.div`
   @media (max-width: 991.1px) {
     margin-top: 35px;
   }
-
 `;
 const Pricing = () => {
   return (
@@ -219,9 +221,8 @@ const Pricing = () => {
       </PackageTitle>
       <SectionHeading>OUR CERAMIC COATING PACKAGES</SectionHeading>
       <SectionDescription>
-        Enhance your vehicle's shine and protection with our premium car
-        detailing packages, tailored to restore and maintain its pristine
-        condition inside and out.
+        GT Quartz Nano Ceramic Coating Lineup- Certified with the manufacturer
+        Warranty backed by CARFAX
       </SectionDescription>
       <div className="container-xl pricing-md-max">
         <div className="row">
@@ -232,47 +233,54 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $499 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $699 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
                 <PricingCoverage className="col">
-                  Ceramic Coating Without Paint Correction
+                  Glisten - 5 Years- $799 <br />
+                  Ceramic coating on new vehicles.
                 </PricingCoverage>
               </div>
               <hr />
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} alt="Checkmark" />
-                  Exterior hand wash
+                  Hand Wash
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Exterior hand dry
+                  <Check src={Checkmark} alt="Checkmark" />
+                  Hand Dry
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Clay bar treatment
+                  <Check src={Checkmark} alt="Checkmark" />
+                  Paint Decontamination
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Paint decontamination
+                  <Check src={Checkmark} alt="Checkmark" />
+                  Clay Bar Treatment
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Ceramic coating (5 years)
+                  <Check src={Checkmark} alt="Checkmark" />
+                  Stage-1 Paint Correction
+                </PricingFeatures>
+              </div>
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} alt="Checkmark" />
+                  GT Quartz Nano Ceramic coating
                 </PricingFeatures>
               </div>
             </PricingCard>
-            <Note>$599 for 7 seater</Note>
+            <Note>+$100 for 7 Passenger</Note>
           </PricingColumn>
 
           <PricingColumnCenter className="col-lg-4">
@@ -287,12 +295,13 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $799 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $999 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
                 <PricingCoverageCenter className="col">
-                  Ceramic Coating With Paint Correction.
+                  Glisten - 5 Years- $1099 <br />
+                  Ceramic coating on old vehicles.
                 </PricingCoverageCenter>
               </div>
               <PricingHr />
@@ -304,100 +313,54 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check alt="Checkmark" src={Checkmark} />2 stage paint correction - compound
-                  and polish
+                  <Check alt="Checkmark" src={Checkmark} />2 stage paint
+                  correction - compound and polish
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check alt="Checkmark" src={Checkmark} />
-                  Ceramic coating (5 years)
+                  GT Quartz Nano Ceramic coating
                 </PricingFeaturesCenter>
               </div>
             </PricingCardCenter>
-            <Note>$899 for 7 seater</Note>
+            <Note>+$100 for 7 Passenger</Note>
           </PricingColumnCenter>
 
           <PricingColumn className="col-lg-4">
             <PricingCard>
-              <div className="row">
-                <PricingTitles className="col">Premium</PricingTitles>
+              <div className="row py-3">
+                <PricingTitles className="col">Single Entry</PricingTitles>
               </div>
-              <div className="row">
-                <PricingCost className="col">
-                  $899 <PricingCostSpan>/Starting</PricingCostSpan>
-                </PricingCost>
-              </div>
-              <div className="row">
-                <PricingCoverage className="col">
-                  Ceramic Coating With Paint Correction And Complete Interior
-                  Detail.
-                </PricingCoverage>
-              </div>
-              <hr />
-              <div className="row">
-                <ListStyle2 className="col">
-                  <ArrowStyle2  className="bi bi-arrow-90deg-down" />
-                  Platinum package, plus
-                </ListStyle2>
-              </div>
+
+              <hr className="py-3" />
+
               <div className="row">
                 <PricingFeatures className="col">
                   <Check alt="Checkmark" src={Checkmark} />
-                  Complete interior deep clean - degrease, steam clean
+                  <span>GT Specialized Rims/Wheels Coating</span>
+                  <BoldText>$100</BoldText>
                 </PricingFeatures>
               </div>
+
               <div className="row">
                 <PricingFeatures className="col">
                   <Check alt="Checkmark" src={Checkmark} />
-                  Interior protectant dressing
+                  <span>GT Specialized Interior/Leather Coating</span>
+                  <BoldText>$200</BoldText>
                 </PricingFeatures>
               </div>
+
               <div className="row">
                 <PricingFeatures className="col">
                   <Check alt="Checkmark" src={Checkmark} />
-                  Carpet shampoo
+                  <span>GT Specialized Fabric Coating</span>
+                  <BoldText>$200</BoldText>
                 </PricingFeatures>
               </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Cloth seat shampoo/ leather
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  seats condition
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Headliner shampoo
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  All glass surface clean (inside)
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Deodrize
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Door jambs clean
-                </PricingFeatures>
-              </div>
+
               <br />
             </PricingCard>
-            <Note>$999 for 7 seater</Note>
           </PricingColumn>
         </div>
       </div>
