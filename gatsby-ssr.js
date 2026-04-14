@@ -1,3 +1,5 @@
+import React from "react";
+
 export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
   setHeadComponents([
     <script
